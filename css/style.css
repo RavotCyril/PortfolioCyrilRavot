@@ -11,43 +11,66 @@ body
 
 {
     font-family: "Roboto Regular", sans-serif;
-    background: url("/images/Font-Ecran-Page.jpg") no-repeat center;
-}
-
-.TitreH1 {
-    width: 100%;
-    font-size: 2.5rem;
-    text-align: center;
-    color: white;
+    /* background: no-repeat url("/images/MeS-Fond-decran-Organisation-2021-EDBH.jpg"); */
+    /* background-size: 1600px 900px; */
 }
 
 .Section-Principal {
     display: flex;
 }
 
+.FontEcran {
+    width: 1583px;
+    height: auto;
+}
+
+.TitreH1 {
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(31, 30, 30);
+}
+
 .Navigation {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    width: 400px;
     font-size: 2rem;
 }
 
 .Balise-Presentation {
+    padding: 0px;
     list-style: none;
-    color: white;
 }
 
 .Nav-List-Items {
+    color: rgb(31, 30, 30);
     width: 250px;
-    margin: 0px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
-.Nav-List-Items:hover {
-    color: rgb(0, 140, 255);
-    border: 1px solid white;
+.Nav-List-Items a {
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+}
+
+.Nav-List-Items:hover a {
+    color: rgb(1, 60, 109);
+}
+
+.NavSpanListSelectionne {
+    color: rgb(1, 60, 109);
+    border: 1px solid rgb(31, 30, 30);
+    ;
+    font-weight: lighter;
+    padding: 5px;
+    background: rgba(230, 230, 230, 0.733);
+    box-shadow: 1px 5px;
 }
 
 .fab.fa-linkedin {
     font-size: 2rem;
-    width: 50px;
+    width: 400px;
     text-align: center;
     color: rgb(10, 102, 194);
 }
@@ -70,7 +93,8 @@ body
         font-size: 1.7rem;
     }
     .Navigation {
-        width: 75%;
+        padding: 50px 0px 0px 50px;
+        width: 250px;
         font-size: 1.5rem;
     }
 }
@@ -83,7 +107,15 @@ body
         font-size: 1.2rem;
     }
     .Navigation {
-        width: 75%;
+        display: flex;
+        margin: 25px 0px 0px 10px;
+        justify-content: left;
         font-size: 1.5rem;
+    }
+    .fab.fa-linkedin {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        color: rgb(10, 102, 194);
     }
 }
