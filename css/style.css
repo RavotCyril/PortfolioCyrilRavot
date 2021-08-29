@@ -15,6 +15,10 @@ body
     /* background-size: 1600px 900px; */
 }
 
+#Main-Partie-Principale-de-La-Page a {
+    text-decoration: none;
+}
+
 .Section-Principal {
     display: flex;
 }
