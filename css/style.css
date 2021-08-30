@@ -94,6 +94,14 @@ h1 {
     margin: 10px 0px 30px 0px;
 }
 
+.Logo-Projet {
+    display: none;
+}
+
+.Logo-Projet:hover {
+    display: block
+}
+
 .fab.fa-linkedin {
     font-size: 2rem;
     width: 400px;
