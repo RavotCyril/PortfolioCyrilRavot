@@ -15,32 +15,48 @@ body
     /* background-size: 1600px 900px; */
 }
 
+
+/* Main Partie Princiaple sur toutes les pages du site */
+
 #Main-Partie-Principale-de-La-Page a {
     text-decoration: none;
 }
+
+
+/* Div principal pour pouvoir mettre la Navigation et la card container cote à cote en flex.  */
 
 .Div-Principal {
     display: flex;
 }
 
-h1 {
-    margin: 15px 0px 15px 0px;
-    color: rgb(1, 60, 109);
-    font-weight: bold;
+
+/* Class section de toutes les pages sauf page Projet.  */
+
+.Section-Principal {
+    margin: 0px;
 }
+
+
+/* Class pour instaurer un font d'écran si besoin pour rendre les pages plus belles ( image en background )  En ATTENTE  ->>>>>>>>> */
 
 .FontEcran {
     width: 1583px;
     height: auto;
 }
 
-.TitreH1 {
+
+/* Titre Principal h1 de toutes les pages */
+
+.TitreH1-Toute-Page {
     width: 100%;
     margin: 0px 0px 50px 0px;
     font-size: 2.5rem;
     text-align: center;
     color: rgb(31, 30, 30);
 }
+
+
+/* Class de la Nav de toutes les pages */
 
 .Navigation {
     display: flex;
@@ -49,10 +65,16 @@ h1 {
     font-size: 2rem;
 }
 
+
+/* Class de la balise Ul dans la navigation */
+
 .Balise-Presentation {
     padding: 0px;
     list-style: none;
 }
+
+
+/* Class des Li dans la navigation */
 
 .Nav-List-Items {
     color: rgb(31, 30, 30);
@@ -60,14 +82,23 @@ h1 {
     margin: 10px 0px 10px 0px;
 }
 
+
+/* Class des liens dans les Li dans la navigation ( Les liens de toutes les pages ) */
+
 .Nav-List-Items a {
     color: rgb(31, 30, 30);
     text-decoration: none;
 }
 
+
+/* Class des liens dans les Li dans la navigation avec une couleur au hover ( Les liens de toutes les pages ) */
+
 .Nav-List-Items:hover a {
     color: rgb(1, 60, 109);
 }
+
+
+/* Span pour afficher la page selectionné et la rendre plus voyante et esthétique. Pour bien montrer que l'on est bien situé sur la page selectionné */
 
 .NavSpanListSelectionne {
     color: rgb(1, 60, 109);
@@ -78,29 +109,80 @@ h1 {
     box-shadow: 1px 5px;
 }
 
-.card-body img {
+
+/* Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) ---> Page projet*/
+
+#bouttonLogoReservia img,
+#bouttonLogoOhmyfood img,
+#bouttonLogoPageOrigineLaChouetteAgence img,
+#bouttonLogoPageCorrectifLaChouetteAgence img,
+#bouttonLogoOrinoco img,
+#bouttonLogoGroupomania img,
+#bouttonLogoSoPekocko img,
+#bouttonLogoPeinture img {
     filter: grayscale(100%);
-    opacity: 0.7;
+    opacity: 0.5;
     width: 200px;
     height: 200px;
     margin: 10px 0px 30px 0px;
 }
 
-.card-body img:hover {
+
+/* Id des boutons des images de tous les projets avec un hover à 0 % Grayscale ( couleur 100 % ) ---> Page projet*/
+
+#bouttonLogoReservia img:hover,
+#bouttonLogoOhmyfood img:hover,
+#bouttonLogoPageOrigineLaChouetteAgence img:hover,
+#bouttonLogoPageCorrectifLaChouetteAgence img:hover,
+#bouttonLogoOrinoco img:hover,
+#bouttonLogoGroupomania img:hover,
+#bouttonLogoSoPekocko img:hover,
+#bouttonLogoPeinture img:hover {
     filter: grayscale(0%);
     opacity: 1;
-    width: 200px;
-    height: 200px;
+}
+
+
+/* H2 Titre de tous les projets  ---> Page projet */
+
+h2 {
+    font-weight: bold;
+}
+
+
+/* Id de tous les Bouttons des projets --> Page projet  */
+
+#bouttonLogoReservia,
+#bouttonLogoOhmyfood,
+#bouttonLogoPageOrigineLaChouetteAgence,
+#bouttonLogoPageCorrectifLaChouetteAgence,
+#bouttonLogoOrinoco,
+#bouttonLogoGroupomania,
+#bouttonLogoSoPekocko,
+#bouttonLogoPeinture {
+    background: transparent;
+    border: none;
+}
+
+
+/* Id de tous les liens des projets pour mettre le display qui correspond à l'affichage souhaité en java-Script --> Page projet */
+
+#divLienProjetReservia,
+#divLienProjetOhmyfood,
+#divLienProjetPageOrigineLaChouetteAgence,
+#divLienProjetPageCorrectifLaChouetteAgence,
+#divLienProjetOrinoco,
+#divLienProjetSoPeckocko,
+#divLienProjetGroupomania,
+#divLienProjetPeinture {
+    display: none;
+    width: 10%;
+    height: auto;
     margin: 10px 0px 30px 0px;
 }
 
-.Logo-Projet {
-    display: none;
-}
 
-.Logo-Projet:hover {
-    display: block
-}
+/* Icon Linkdin */
 
 .fab.fa-linkedin {
     font-size: 2rem;
