@@ -11,8 +11,7 @@ body
 
 {
     font-family: "Roboto Regular", sans-serif;
-    /* background: no-repeat url("/images/MeS-Fond-decran-Organisation-2021-EDBH.jpg"); */
-    /* background-size: 1600px 900px; */
+    background: #D1C7BD;
 }
 
 
@@ -107,6 +106,10 @@ body
     padding: 5px;
     background: rgba(230, 230, 230, 0.733);
     box-shadow: 1px 5px;
+}
+
+.Couleur-Div {
+    background: #93a0aa;
 }
 
 
