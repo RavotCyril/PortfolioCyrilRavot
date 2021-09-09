@@ -88,3 +88,14 @@ bouttonLogoPeinture.addEventListener("click", () => {
         }
     })
     /* ----------------------------------------------Fin Function de tous les bouttons  Fin--------------------------------------------*/
+    /* -------------------Function Navigation bouton mobile  Début----------------------------------*/
+
+function myFunction() {
+    let divNav = document.getElementById("myTopnav");
+    if (divNav.className === "Navigation-Mobile") {
+        divNav.className += " responsive";
+    } else {
+        divNav.className = "Navigation-Mobile";
+    }
+}
+/* ---------------------- Function Navigation bouton mobile Fin-------------------------------------*/
