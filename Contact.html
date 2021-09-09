@@ -21,32 +21,91 @@
     <main>
         <section class="Section-Principal">
             <h2 class="text-center Titre-Section-Projet">Merci de compléter ce formulaire</h2>
-            <nav class="Navigation">
-                <ul class="Balise-Presentation">
-                    <li class="Nav-List-Items">
+            <div class="Div-Principal">
+                <div class="Navigation-Mobile" id="myTopnav">
+                    <nav class="Navigation">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                         <a href="index.html">Accueil</a>
-                    </li>
-                    <li class="Nav-List-Items">
                         <a href="Formations.html">Formations</a>
-                    </li>
-                    <li class="Nav-List-Items">
                         <a href="Projets.html">Projets</a>
-                    </li>
-                    <li class="Nav-List-Items">
                         <a href="Competences.html">Compétences</a>
-                    </li>
-                    <li class="Nav-List-Items">
                         <span class="NavListSelectionne">Contact</span>
-                    </li>
-                    <li class="Nav-List-Items">
                         <a href="A-Propos.html">A propos</a>
-                    </li>
-                </ul>
-            </nav>
+                    </nav>
+                </div>
+                <div class="Div-Navigation-Desktop">
+                    <nav class="Navigation-Desktop">
+                        <ul class="Balise-Presentation">
+                            <li class="Nav-List-Items">
+                                <a href="index.html">Accueil</a>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <a href="Formations.html">Formations</a>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <a href="Projets.html">Projets</a>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <a href="Competences.html">Compétences</a>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <span class="NavListSelectionne">Contact</span>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <a href="A-Propos.html">A propos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <form id="Contact" class="container-fluid">
+                    <div class="row">
+                        <label class="col-8 text-center mx-auto my-3" for="firstName">Prénom</label>
+                        <input id="firstName" name="firstName" class="col-8 text-center mx-auto my-3" placeholder="Entrer un Prénom" required="" type="text">
+                        <span id="ClassErrorInputFirstNameTag">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <label class="col-8 text-center mx-auto my-3" for="lastName">Nom</label>
+                        <input id="lastName" name="LastName" class="col-8 text-center mx-auto my-3" placeholder="Entrer un Nom" required="" type="text">
+                        <span id="ClassErrorInputLastNameTag">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <label class="col-8 text-center mx-auto my-3" for="email">Adresse émail</label>
+                        <input id="email" name="email" class="col-8 text-center mx-auto my-3" placeholder="Entrer un émail" required="" type="email">
+                        <span id="ClassErrorInputMailTag">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <label class="col-8 text-center mx-auto my-3" for="Sujet">Sujet</label>
+                        <input id="Sujet" name="Sujet" class="col-8 text-center mx-auto my-3" placeholder="Entrer une adresse" required="" type="text">
+                        <span id="ClassErrorInputAdresseTag">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <label class="col-8 text-center mx-auto my-3" for="message">Commentaire</label>
+                        <input id="message" name="message" class="col-8 text-center mx-auto my-3" placeholder="Entrer une ville" required="" type="text">
+                        <span id="ClassErrorInputCityTag">
+                        </span>
+                    </div>
+                    <div class="row">
+                        <button id="validation commande" class="Boutton col-4 text-center mx-auto my-3" type="submit" class="Envoyer-Formulaire" required>
+                            Envoyer le formulaire
+                        </buton>
+                </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-        <span> <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck">  <i class="fab fa-linkedin"></i></a></span>
+        <div class="Adresse-Email"><span><i class="fas fa-envelope"></i>Email Adress</span> cyril.ravot@hotmail.fr</div>
+        <div class="Telephone"><span><i class="fas fa-phone-alt"></i>Téléphone</span>06-08-67-71-39</div>
+        <div class="Linkedin">
+            <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i class="fab fa-linkedin-in"></i></a>
+            <span class="bold">Linkedin</span>
+        </div>
     </footer>
     <!-- bundle js, Popper.js,  Bootstrap JS -->
 
