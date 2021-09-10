@@ -61,7 +61,7 @@
         display: block;
         color: #f2f2f2;
         text-align: center;
-        padding: 15px 0px 0px 5px;
+        padding: 6px;
         text-decoration: none;
         font-size: 17px;
     }
@@ -116,6 +116,21 @@
     
     .Couleur-Div {
         background: #93a0aa;
+    }
+    /* Class pour mettre les inputs du formulaire en flex - Colonnes */
+    
+    .Disposition-Formulaire {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sujet {
+        width: 200px;
+    }
+    
+    #message {
+        width: 400px;
+        height: 200px;
     }
     /* Class Paragraphe pour les balises "p" qui donnent la description des sites présentés et les thème principaux 
  des images screenshots avec une couleur bleu et un style italic*/
@@ -215,6 +230,8 @@
     footer {
         display: flex;
         justify-content: center;
+        width: 90%;
+        margin: 0px auto;
     }
     
     footer a {
@@ -230,14 +247,14 @@
     .Telephone {
         display: flex;
         flex-direction: column;
-        width: 15%;
+        width: 30%;
         text-align: center;
     }
     
     .Linkedin {
         display: flex;
         flex-direction: column;
-        width: 15%;
+        width: 30%;
         text-align: center;
     }
     
@@ -312,6 +329,7 @@
         }
         .NavListSelectionne {
             font-size: 1rem;
+            margin: 0px 0px 5px 0px;
         }
         .Div-Navigation-Desktop {
             display: none;
@@ -320,7 +338,7 @@
             display: block;
         }
         .Navigation-Mobile a {
-            font-size: 0.8rem;
+            font-size: 1rem;
             display: none;
         }
         .Navigation-Mobile a.icon {
@@ -348,14 +366,34 @@
             font-size: 1.7rem;
         }
         .Navigation {
-            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 45px;
             width: 100%;
             font-size: 1.5rem;
-            flex-direction: column;
         }
         .Page-A-Propos-Article-Presentation {
             width: 80%;
             margin: 20px auto;
+        }
+        footer {
+            width: 100%;
+            margin: 0px;
+        }
+        .Adresse-Email,
+        .Telephone {
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            width: 36%;
+            text-align: center;
+        }
+        .Linkedin {
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            width: 28%;
+            text-align: center;
         }
     }
     
@@ -414,15 +452,32 @@
         }
         .NavListSelectionne {
             font-size: 0.8rem;
+            margin: 0px 0px 5px 0px;
         }
         .Page-A-Propos-Article-Presentation {
             width: 80%;
             margin: 20px auto;
         }
-        .fab.fa-linkedin {
-            font-size: 2rem;
+        footer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0px;
+        }
+        .Adresse-Email,
+        .Telephone {
+            font-size: 0.8rem;
+            display: flex;
+            flex-direction: column;
             width: 100%;
             text-align: center;
-            color: rgb(10, 102, 194);
+            margin: 10px 0px;
+        }
+        .Linkedin {
+            font-size: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
         }
     }
