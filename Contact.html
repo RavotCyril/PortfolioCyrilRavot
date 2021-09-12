@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="/JavaScript/style.js" defer></script>
+    <script src="JavaScript/Nav.js" defer></script>
+    <script src="JavaScript/Contact.js" defer></script>
     <title>Portfolio Ravot Cyril</title>
 
 </head>
@@ -24,7 +25,7 @@
             <div class="Div-Principal">
                 <div class="Navigation-Mobile" id="myTopnav">
                     <nav class="Navigation">
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <a href="javascript:void(0);" class="icon" onclick="NavigationMobile()">
                             <i class="fa fa-bars"></i>
                         </a>
                         <a href="index.html">Accueil</a>
@@ -86,7 +87,7 @@
                     </div>
                     <div class="Disposition-Formulaire">
                         <label class="" for="message">Commentaire</label>
-                        <textarea id="message" name="message" cols="10" rows="10" placeholder="Entrer un commentaire " required=" " type="text ">
+                        <textarea id="message" name="message" cols="10" rows="10" placeholder="Entrer un commentaire " required="" type="text ">
                        </textarea>
                         <span id="ClassErrorInputMessageTag "></span>
                     </div>
@@ -96,11 +97,17 @@
         </section>
     </main>
     <footer>
-        <div class="Adresse-Email "><span><i class="fas fa-envelope "></i>Email Adress</span> cyril.ravot@hotmail.fr</div>
-        <div class="Telephone "><span><i class="fas fa-phone-alt "></i>Téléphone</span>06-08-67-71-39</div>
-        <div class="Linkedin ">
-            <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/ " target="blanck "><i class="fab fa-linkedin-in "></i></a>
-            <span class="bold ">Linkedin</span>
+        <div class="Adresse-Email">
+            <span><i class="fas fa-envelope"></i></span><span class="bold">Email Adress</span>
+            <a href="mailto:cyril.ravot@hotmail.fr">cyril.ravot@hotmail.fr</a>
+        </div>
+        <div class="Telephone">
+            <span><i class="fas fa-phone-alt"></i></span><span class="bold">Téléphone</span
+                    >06-08-67-71-39
+                </div>
+            <div class="Linkedin">
+                <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i class="fab fa-linkedin-in"></i></a>
+                <span class="bold">Linkedin</span>
         </div>
     </footer>
     <!-- bundle js, Popper.js,  Bootstrap JS -->

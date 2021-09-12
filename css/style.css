@@ -142,7 +142,6 @@
     /* Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) ---> Page projet*/
     
     #bouttonLogoReservia img,
-    #bouttonLogoOhmyfood img,
     #bouttonLogoPageOrigineLaChouetteAgence img,
     #bouttonLogoPageCorrectifLaChouetteAgence img,
     #bouttonLogoGroupomania img,
@@ -151,6 +150,12 @@
     #bouttonLogoPeinture img {
         filter: grayscale(100%);
         opacity: 0.5;
+    }
+    
+    #bouttonLogoOhmyfood img {
+        filter: grayscale(100%);
+        opacity: 0.5;
+        margin: 50px 0px 0px 0px;
     }
     
     #bouttonLogoOrinoco img {
@@ -230,8 +235,10 @@
     footer {
         display: flex;
         justify-content: center;
-        width: 90%;
-        margin: 0px auto;
+        width: 100%;
+        border-top: 1px solid #0093ff;
+        border-bottom: 1px solid #009fff;
+        box-shadow: inset 0px 0px 3px 3px #084775;
     }
     
     footer a {
@@ -280,6 +287,14 @@
     /* styles pour tablettes*/
     
     {
+        .Navigation-Mobile {
+            display: none;
+        }
+        .Navigation-Desktop {
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+        }
         /* Page ->> A-Propos  Div-Navigation-Desktop */
         .Div-Navigation-Desktop {
             width: 40%;
@@ -289,13 +304,20 @@
             width: 45%;
             margin: 20px auto;
         }
-        .Navigation-Mobile {
-            display: none;
+        /* Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) ---> Page projet*/
+        #bouttonLogoReservia img,
+        #bouttonLogoOhmyfood img,
+        #bouttonLogoPageOrigineLaChouetteAgence img,
+        #bouttonLogoPageCorrectifLaChouetteAgence img,
+        #bouttonLogoGroupomania img,
+        #bouttonLogoOrinoco img,
+        #bouttonLogoSoPekocko img,
+        #bouttonLogoPeinture img {
+            width: 200px;
         }
-        .Navigation-Desktop {
-            display: flex;
-            justify-content: center;
-            font-size: 2rem;
+        #bouttonLogoOhmyfood img {
+            width: 200px;
+            margin: 20px 0px 0px 0px;
         }
     }
     
@@ -314,6 +336,23 @@
         .Page-A-Propos-Article-Presentation {
             width: 45%;
             margin: 20px auto;
+        }
+        /* Page ->> projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% )*/
+        #bouttonLogoReservia img,
+        #bouttonLogoOhmyfood img,
+        #bouttonLogoPageOrigineLaChouetteAgence img,
+        #bouttonLogoPageCorrectifLaChouetteAgence img,
+        #bouttonLogoGroupomania img,
+        #bouttonLogoOrinoco img,
+        #bouttonLogoSoPekocko img,
+        #bouttonLogoPeinture img {
+            filter: grayscale(100%);
+            opacity: 0.5;
+            width: 200px;
+        }
+        #bouttonLogoOhmyfood img {
+            width: 200px;
+            margin: 20px 0px 0px 0px;
         }
     }
     
@@ -376,9 +415,20 @@
             width: 80%;
             margin: 20px auto;
         }
-        footer {
-            width: 100%;
-            margin: 0px;
+        /* ->> Page projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) */
+        #bouttonLogoReservia img,
+        #bouttonLogoOhmyfood img,
+        #bouttonLogoPageOrigineLaChouetteAgence img,
+        #bouttonLogoPageCorrectifLaChouetteAgence img,
+        #bouttonLogoGroupomania img,
+        #bouttonLogoOrinoco img,
+        #bouttonLogoSoPekocko img,
+        #bouttonLogoPeinture img {
+            width: 140px;
+        }
+        #bouttonLogoOhmyfood img {
+            width: 140px;
+            margin: 10px 0px 0px 0px;
         }
         .Adresse-Email,
         .Telephone {
@@ -461,8 +511,21 @@
         footer {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            margin: 0px;
+        }
+        /* ->> Page projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) */
+        #bouttonLogoReservia img,
+        #bouttonLogoOhmyfood img,
+        #bouttonLogoPageOrigineLaChouetteAgence img,
+        #bouttonLogoPageCorrectifLaChouetteAgence img,
+        #bouttonLogoGroupomania img,
+        #bouttonLogoOrinoco img,
+        #bouttonLogoSoPekocko img,
+        #bouttonLogoPeinture img {
+            width: 140px;
+        }
+        #bouttonLogoOhmyfood img {
+            width: 140px;
+            margin: 10px 0px 0px 0px;
         }
         .Adresse-Email,
         .Telephone {

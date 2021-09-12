@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="/JavaScript/style.js" defer></script>
+    <script src="JavaScript/Nav.js" defer></script>
+    <script src="JavaScript/Projets.js" defer></script>
     <title>Portfolio Ravot Cyril</title>
 
 </head>
@@ -19,34 +20,49 @@
         <h1 class="TitreH1-Toute-Page">Développeur Web Cyril Ravot</h1>
     </header>
     <main id="Main-Partie-Principale-de-La-Page">
-        <section>
-            <h2 class="text-center Titre-Section-Projet">Présentation de projets réalisés</h2>
+        <section class="Section-Principal">
+            <h2 class="text-center my-5">Mes Projets Professionnels</h2>
             <div class="Div-Principal">
-                <nav class="Navigation">
-                    <ul class="Balise-Presentation">
-                        <li class="Nav-List-Items">
-                            <a href="index.html">Accueil</a>
-                        </li>
-                        <li class="Nav-List-Items">
-                            <a href="Formations.html">Formations</a>
-                        </li>
-                        <li class="Nav-List-Items">
-                            <span class="NavListSelectionne">Projets</span>
-                        </li>
-                        <li class="Nav-List-Items">
-                            <a href="Competences.html">Compétences</a>
-                        </li>
-                        <li class="Nav-List-Items">
-                            <a href="Contact.html">Contact</a>
-                        </li>
-                        <li class="Nav-List-Items">
-                            <a href="A-Propos.html">A propos</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="Couleur-Div card container border-0 ">
+                <div class="Navigation-Mobile" id="myTopnav">
+                    <nav class="Navigation">
+                        <a href="javascript:void(0);" class="icon" onclick="NavigationMobile()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <a href="index.html">Accueil</a>
+                        <a href="Formations.html">Formations</a>
+                        <span class="NavListSelectionne">Projets</span>
+                        <a href="Competences.html">Compétences</a>
+                        <a href="Contact.html">Contact</a>
+                        <a href="A-Propos.html">A propos</a>
+                    </nav>
+                </div>
+                <div class="Div-Navigation-Desktop">
+                    <nav class="Navigation-Desktop">
+                        <ul class="Balise-Presentation">
+                            <li class="Nav-List-Items">
+                                <a href="index.html">Accueil</a>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <a href="Formations.html">Formations</a>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <span class="NavListSelectionne">Projets</span>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <a href="Competences.html">Compétences</a>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <a href="Contact.html">Contact</a>
+                            </li>
+                            <li class="Nav-List-Items">
+                                <a href="A-Propos.html">A propos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="Couleur-Div card container-fluid border-0">
                     <div class="row">
-                        <div class="Couleur-Div card col-6 border-0">
+                        <div class="Couleur-Div card col-12  col-sm-6  border-1">
                             <div class="card-body text-center">
                                 <h2 class="card-title mb-4">Projet 2</h2>
                                 <button id="bouttonLogoReservia"><img src="images/Reservia-Logo.png" alt="Projet 2 Reservia-Logo"></button>
@@ -58,10 +74,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Couleur-Div card col-6 border-0">
+                        <div class="Couleur-Div card col-12  col-sm-6  border-1">
                             <div class="card-body text-center">
                                 <h2 class="card-title mb-4">Projet 3</h2>
-                                <button class="mt-3" id="bouttonLogoOhmyfood"><img class="mt-5 pt-1" src="images/Ohmyfood-Logo.png" alt="Projet 3 Ohmyfood-Logo"></button>
+                                <button class="mt-3" id="bouttonLogoOhmyfood"><img src="images/Ohmyfood-Logo.png" alt="Projet 3 Ohmyfood-Logo"></button>
                                 <div id="divLienProjetOhmyfood">
                                     <a href="https://ravotcyril.github.io/RavotCyril_3_01032021/">
                                         <span class="Image-Lien-Projet"><img src="images/ohmyfood.png" alt="Projet 3 Lien Omyfood"></span>
@@ -72,7 +88,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="Couleur-Div card col-6 border-0">
+                        <div class="Couleur-Div card col-12  col-sm-6  border-1">
                             <div class="card-body text-center">
                                 <h2 class="card-title mb-4">Projet 4</h2>
                                 <button id="bouttonLogoPageOrigineLaChouetteAgence"><img src="images/La-chouette-Agence-Logo.png" alt="Projet 4 La-chouette-Agence-Logo"></button>
@@ -84,7 +100,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Couleur-Div card col-6 border-0">
+                        <div class="Couleur-Div card col-12  col-sm-6  border-1">
                             <div class="card-body text-center">
                                 <h2 class="card-title mb-4">Projet 4</h2>
                                 <button id="bouttonLogoPageCorrectifLaChouetteAgence"><img src="images/La-chouette-Agence-Logo.png " alt="Projet 4 La chouette agence-Logo"></button>
@@ -98,7 +114,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="Couleur-Div card col-6 border-0">
+                        <div class="Couleur-Div card col-12  col-sm-6  border-1">
                             <div class="card-body text-center">
                                 <h2 class="card-title mb-4">Projet 5</h2>
                                 <button id="bouttonLogoOrinoco"><img src="images/Orinoco-Logo.png" alt="Projet 5 Orinoco-Logo"></button>
@@ -110,7 +126,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Couleur-Div card col-6 border-0">
+                        <div class="Couleur-Div card col-12  col-sm-6  border-1">
                             <div class="card-body text-center">
                                 <h2 class="card-title mb-4  ">Projet 6</h2>
                                 <button id="bouttonLogoSoPekocko"><img src="images/So-Pekocko-Logo.png" alt="Projet 6 So Pekocko-Logo "></button>
@@ -124,7 +140,7 @@
                         </div>
                     </div>
                     <div class="row ">
-                        <div class="Couleur-Div card col-6 border-0">
+                        <div class="Couleur-Div card col-12  col-sm-6  border-1">
                             <div class="card-body text-center ">
                                 <h2 class="card-title mb-4">Projet 7</h2>
                                 <button id="bouttonLogoGroupomania"><img src="images/Groupomania-logo.png" alt="Projet 7 Groupomania-Logo"></button>
@@ -136,7 +152,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="Couleur-Div card col-6 border-0 ">
+                        <div class="Couleur-Div card col-12  col-sm-6  border-1 ">
                             <div class="card-body text-center">
                                 <h2 class="card-title mb-4">Projet 8 prochainement</h2>
                                 <button id="bouttonLogoPeinture"><img src="images/photos16.jpg" alt="Projet 8 Peinture-Logo"></button>
@@ -154,10 +170,17 @@
         </section>
     </main>
     <footer>
-        <div class="Adresse-Email"><span><i class="fas fa-envelope"></i>Email Adress</span> cyril.ravot@hotmail.fr</div>
-        <div class="Telephone"><span><i class="fas fa-phone-alt"></i>Téléphone</span>06-08-67-71-39</div>
-        <div class="Linkedin"><i class="fab fa-linkedin"></i>Linkedin
-            <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"></a>
+        <div class="Adresse-Email">
+            <span><i class="fas fa-envelope"></i></span><span class="bold">Email Adress</span>
+            <a href="mailto:cyril.ravot@hotmail.fr">cyril.ravot@hotmail.fr</a>
+        </div>
+        <div class="Telephone">
+            <span><i class="fas fa-phone-alt"></i></span><span class="bold">Téléphone</span
+                    >06-08-67-71-39
+                </div>
+            <div class="Linkedin">
+                <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i class="fab fa-linkedin-in"></i></a>
+                <span class="bold">Linkedin</span>
         </div>
     </footer>
     <!-- bundle js, Popper.js,  Bootstrap JS -->
