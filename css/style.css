@@ -13,6 +13,10 @@
         font-family: "Roboto Regular", sans-serif;
         background: #D1C7BD;
     }
+    
+    .Body-Contact {
+        background: #437081;
+    }
     /* Main Partie Princiaple sur toutes les pages du site */
     
     #Main-Partie-Principale-de-La-Page a {
@@ -37,16 +41,9 @@
         text-align: center;
         color: rgb(31, 30, 30);
     }
-    /* Page ->> A-Propos  Div-Navigation-Desktop */
-    
-    .Div-Navigation-Desktop {
-        width: 40%;
-    }
     /* Class de la Nav de toutes les pages */
     
     .Navigation-Desktop {
-        display: flex;
-        justify-content: center;
         font-size: 2rem;
     }
     /* Nav bouton mobile java script  de toutes les pages */
@@ -82,15 +79,19 @@
     /* Class de la balise Ul dans la navigation */
     
     .Balise-Presentation {
+        width: 100%;
+        display: flex;
         padding: 0px;
         list-style: none;
+        justify-content: space-between;
     }
     /* Class des Li dans la navigation */
     
     .Nav-List-Items {
         color: rgb(31, 30, 30);
-        width: 250px;
-        margin: 10px 0px 10px 0px;
+        width: 200px;
+        margin: 10px 10px;
+        text-align: center;
     }
     /* Class des liens dans les Li dans la navigation ( Les liens de toutes les pages ) */
     
@@ -115,7 +116,12 @@
     }
     
     .Couleur-Div {
-        background: #93a0aa;
+        background: #64839b;
+    }
+    /*  Page --> Compétences  Class pour les compétences pour enlever les puces des li*/
+    
+    .Competences {
+        text-align: center;
     }
     /* Class pour mettre les inputs du formulaire en flex - Colonnes */
     
@@ -123,14 +129,28 @@
         display: flex;
         flex-direction: column;
     }
+    /* Class pour mettre les formulaires au centre */
     
-    #sujet {
-        width: 200px;
+    #Contact {
+        text-align: center;
     }
     
+    #sujet,
+    #firstName,
+    #lastName,
+    #email,
     #message {
-        width: 400px;
-        height: 200px;
+        width: 350px;
+        text-align: center;
+        margin: 0px auto;
+    }
+    /* -> Page Contact Class pour mettre les labels du formulaire à gauche*/
+    
+    label {
+        width: 350px;
+        text-align: left;
+        margin: 0px auto;
+        font-size: 2rem;
     }
     /* Class Paragraphe pour les balises "p" qui donnent la description des sites présentés et les thème principaux 
  des images screenshots avec une couleur bleu et un style italic*/
@@ -215,16 +235,19 @@
     /* Page ->> A-Propos  Article-Presentation */
     
     .Page-A-Propos-Article-Presentation {
-        width: 50%;
+        width: 90%;
         margin: 20px auto;
+        text-align: justify;
     }
+    /* Page ->> Contact Boutton Formulaire */
     
     .Boutton {
         background: rgb(70, 70, 70);
         color: white;
-        font-size: 1.5rem;
+        font-size: 2rem;
         border-radius: 30px 30px;
         border-width: 0px;
+        padding: 20px;
     }
     
     .Boutton:hover {
@@ -236,9 +259,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        border-top: 1px solid #0093ff;
-        border-bottom: 1px solid #009fff;
-        box-shadow: inset 0px 0px 3px 3px #084775;
+        box-shadow: inset 0px 0px 1px 1px #084775;
     }
     
     footer a {
@@ -248,38 +269,86 @@
     
     .bold {
         font-weight: bold;
+        color: black;
     }
     
     .Adresse-Email,
     .Telephone {
+        font-size: 1.5rem;
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 25%;
         text-align: center;
     }
     
-    .Linkedin {
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        text-align: center;
+    .Adresse-Email a {
+        color: black;
+    }
+    
+    .Adresse-Email:hover a {
+        color: #311919;
     }
     
     .Adresse-Email i {
+        filter: grayscale(0%);
+        margin: 10px 0px;
         font-size: 1.5rem;
-        color: red;
+    }
+    
+    .Adresse-Email:hover {
+        color: #311919;
     }
     
     .Telephone i {
+        filter: grayscale(0%);
+        margin: 10px 0px;
         font-size: 1.5rem;
+    }
+    
+    .Telephone:hover {
         color: blue;
     }
     
-    .Linkedin i {
+    .GitHub {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .GitHub i {
+        filter: grayscale(0%);
+        margin: 10px 0px;
         width: 34px;
         height: 34px;
         line-height: 34px;
         color: white;
+        background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+    }
+    
+    .GitHub:hover i {
+        background: linear-gradient(to left, #000, #07aaaa 50%, #173d79 75%);
+    }
+    
+    .Linkedin {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .Linkedin i {
+        filter: grayscale(0%);
+        margin: 10px 0px;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        color: white;
+    }
+    
+    .Linkedin:hover i {
         background: rgb(10, 102, 194);
     }
     
@@ -289,20 +358,6 @@
     {
         .Navigation-Mobile {
             display: none;
-        }
-        .Navigation-Desktop {
-            display: flex;
-            justify-content: center;
-            font-size: 2rem;
-        }
-        /* Page ->> A-Propos  Div-Navigation-Desktop */
-        .Div-Navigation-Desktop {
-            width: 40%;
-        }
-        /* Page ->> A-Propos  Article-Presentation */
-        .Page-A-Propos-Article-Presentation {
-            width: 45%;
-            margin: 20px auto;
         }
         /* Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) ---> Page projet*/
         #bouttonLogoReservia img,
@@ -325,17 +380,18 @@
     /* styles pour tablettes*/
     
     {
+        .Navigation-Desktop {
+            font-size: 1.5rem;
+        }
+        /* Class des Li dans la navigation */
+        .Nav-List-Items {
+            color: rgb(31, 30, 30);
+            width: 180px;
+            margin: 10px 1px;
+            text-align: center;
+        }
         .Navigation-Mobile {
             display: none;
-        }
-        /* Page ->> A-Propos  Div-Navigation-Desktop */
-        .Div-Navigation-Desktop {
-            width: 40%;
-        }
-        /* Page ->> A-Propos  Article-Presentation */
-        .Page-A-Propos-Article-Presentation {
-            width: 45%;
-            margin: 20px auto;
         }
         /* Page ->> projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% )*/
         #bouttonLogoReservia img,
@@ -354,6 +410,19 @@
             width: 200px;
             margin: 20px 0px 0px 0px;
         }
+        .Adresse-Email,
+        .Telephone {
+            font-size: 1.2rem;
+        }
+        .Linkedin {
+            font-size: 1.2rem;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            box-shadow: inset 0px 0px 1px 1px #084775;
+        }
     }
     
     @media screen and (min-width:376px) and (max-width:768px)
@@ -369,6 +438,7 @@
         .NavListSelectionne {
             font-size: 1rem;
             margin: 0px 0px 5px 0px;
+            text-align: center;
         }
         .Div-Navigation-Desktop {
             display: none;
@@ -395,7 +465,7 @@
         .Navigation-Mobile.responsive a {
             float: none;
             display: block;
-            text-align: left;
+            text-align: center;
         }
         .Div-Principal {
             display: flex;
@@ -410,10 +480,6 @@
             padding-top: 45px;
             width: 100%;
             font-size: 1.5rem;
-        }
-        .Page-A-Propos-Article-Presentation {
-            width: 80%;
-            margin: 20px auto;
         }
         /* ->> Page projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) */
         #bouttonLogoReservia img,
@@ -430,20 +496,28 @@
             width: 140px;
             margin: 10px 0px 0px 0px;
         }
+        /* -> Page Contact Class pour mettre les labels du formulaire à gauche*/
+        label {
+            width: 85%;
+            font-size: 1.5rem;
+        }
+        /* Page ->> Contact Boutton Formulaire */
+        .Boutton {
+            font-size: 1.5rem;
+            padding: 10px;
+        }
         .Adresse-Email,
         .Telephone {
+            width: 25%;
             font-size: 0.9rem;
-            display: flex;
-            flex-direction: column;
-            width: 36%;
-            text-align: center;
+        }
+        .GitHub {
+            width: 25%;
+            font-size: 0.9rem;
         }
         .Linkedin {
+            width: 25%;
             font-size: 0.9rem;
-            display: flex;
-            flex-direction: column;
-            width: 28%;
-            text-align: center;
         }
     }
     
@@ -483,7 +557,7 @@
         .Navigation-Mobile.responsive a {
             float: none;
             display: block;
-            text-align: left;
+            text-align: center;
         }
         .Div-Principal {
             display: flex;
@@ -503,10 +577,28 @@
         .NavListSelectionne {
             font-size: 0.8rem;
             margin: 0px 0px 5px 0px;
+            text-align: center;
         }
         .Page-A-Propos-Article-Presentation {
             width: 80%;
             margin: 20px auto;
+        }
+        #sujet,
+        #firstName,
+        #lastName,
+        #email,
+        #message {
+            width: 85%;
+        }
+        /* Page ->> Contact Boutton Formulaire */
+        .Boutton {
+            font-size: 1rem;
+            padding: 10px;
+        }
+        /* -> Page Contact Class pour mettre les labels du formulaire à gauche*/
+        label {
+            width: 85%;
+            font-size: 1rem;
         }
         footer {
             display: flex;
@@ -535,6 +627,13 @@
             width: 100%;
             text-align: center;
             margin: 10px 0px;
+        }
+        .GitHub {
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
         }
         .Linkedin {
             font-size: 0.8rem;

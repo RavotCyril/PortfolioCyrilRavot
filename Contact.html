@@ -15,85 +15,83 @@
 
 </head>
 
-<body>
+<body class="Body-Contact">
     <header>
         <h1 class="TitreH1-Toute-Page">Développeur Web Cyril Ravot</h1>
+        <div class="Navigation-Mobile" id="myTopnav">
+            <nav class="Navigation">
+                <a href="javascript:void(0);" class="icon" onclick="NavigationMobile()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="index.html">Accueil</a>
+                <a href="Formations.html">Formations</a>
+                <a href="Projets.html">Projets</a>
+                <a href="Competences.html">Compétences</a>
+                <span class="NavListSelectionne">Contact</span>
+                <a href="A-Propos.html">A propos</a>
+            </nav>
+        </div>
+        <div class="Div-Navigation-Desktop">
+            <nav class="Navigation-Desktop">
+                <ul class="Balise-Presentation">
+                    <li class="Nav-List-Items">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="Nav-List-Items">
+                        <a href="Formations.html">Formations</a>
+                    </li>
+                    <li class="Nav-List-Items">
+                        <a href="Projets.html">Projets</a>
+                    </li>
+                    <li class="Nav-List-Items">
+                        <a href="Competences.html">Compétences</a>
+                    </li>
+                    <li class="Nav-List-Items">
+                        <span class="NavListSelectionne">Contact</span>
+                    </li>
+                    <li class="Nav-List-Items">
+                        <a href="A-Propos.html">A propos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="Section-Principal">
             <h2 class="text-center my-5">Merci de compléter ce formulaire</h2>
-            <div class="Div-Principal">
-                <div class="Navigation-Mobile" id="myTopnav">
-                    <nav class="Navigation">
-                        <a href="javascript:void(0);" class="icon" onclick="NavigationMobile()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                        <a href="index.html">Accueil</a>
-                        <a href="Formations.html">Formations</a>
-                        <a href="Projets.html">Projets</a>
-                        <a href="Competences.html">Compétences</a>
-                        <span class="NavListSelectionne">Contact</span>
-                        <a href="A-Propos.html">A propos</a>
-                    </nav>
+            <form id="Contact">
+                <div class="Disposition-Formulaire">
+                    <label class="label" for="firstName">Prénom*</label>
+                    <input id="firstName" name="firstName" class="text-center my-3" placeholder="Entrer un Prénom" required="" type="text">
+                    <span id="ClassErrorInputFirstNameTag">
+                        </span>
                 </div>
-                <div class="Div-Navigation-Desktop">
-                    <nav class="Navigation-Desktop">
-                        <ul class="Balise-Presentation">
-                            <li class="Nav-List-Items">
-                                <a href="index.html">Accueil</a>
-                            </li>
-                            <li class="Nav-List-Items">
-                                <a href="Formations.html">Formations</a>
-                            </li>
-                            <li class="Nav-List-Items">
-                                <a href="Projets.html">Projets</a>
-                            </li>
-                            <li class="Nav-List-Items">
-                                <a href="Competences.html">Compétences</a>
-                            </li>
-                            <li class="Nav-List-Items">
-                                <span class="NavListSelectionne">Contact</span>
-                            </li>
-                            <li class="Nav-List-Items">
-                                <a href="A-Propos.html">A propos</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="Disposition-Formulaire">
+                    <label class="label" for="lastName">Nom*</label>
+                    <input id="lastName" name="lastName" class="text-center my-3" placeholder="Entrer un Nom" required="" type="text">
+                    <span id="ClassErrorInputLastNameTag">
+                        </span>
                 </div>
-                <form id="Contact">
-                    <div class="Disposition-Formulaire">
-                        <label class="" for="firstName">Prénom</label>
-                        <input id="firstName" name="firstName" class="text-center my-3" placeholder="Entrer un Prénom" required="" type="text">
-                        <span id="ClassErrorInputFirstNameTag">
+                <div class="Disposition-Formulaire">
+                    <label class="label" for="email">Adresse émail*</label>
+                    <input id="email" name="email" class="text-center my-3" placeholder="Entrer un émail" required="" type="email">
+                    <span id="ClassErrorInputMailTag">
                         </span>
-                    </div>
-                    <div class="Disposition-Formulaire">
-                        <label class="" for="lastName">Nom</label>
-                        <input id="lastName" name="lastName" class="text-center my-3" placeholder="Entrer un Nom" required="" type="text">
-                        <span id="ClassErrorInputLastNameTag">
+                </div>
+                <div class="Disposition-Formulaire">
+                    <label class="label" for="sujet">Sujet*</label>
+                    <input id="sujet" name="sujet" class="text-center my-3" placeholder="Entrer le titre du sujet" required="" type="text">
+                    <span id="ClassErrorInputSujetTag">
                         </span>
-                    </div>
-                    <div class="Disposition-Formulaire">
-                        <label class="" for="email">Adresse émail</label>
-                        <input id="email" name="email" class="text-center my-3" placeholder="Entrer un émail" required="" type="email">
-                        <span id="ClassErrorInputMailTag">
-                        </span>
-                    </div>
-                    <div class="Disposition-Formulaire">
-                        <label class="" for="sujet">Sujet</label>
-                        <input id="sujet" name="sujet" class="text-center my-3" placeholder="Entrer le titre du sujet" required="" type="text">
-                        <span id="ClassErrorInputSujetTag">
-                        </span>
-                    </div>
-                    <div class="Disposition-Formulaire">
-                        <label class="" for="message">Commentaire</label>
-                        <textarea id="message" name="message" cols="10" rows="10" placeholder="Entrer un commentaire " required="" type="text ">
+                </div>
+                <div class="Disposition-Formulaire">
+                    <label class="label" for="message">Commentaire*</label>
+                    <textarea class="my-3" id="message" name="message" cols="10" rows="10" placeholder="Entrer un commentaire " required="" type="text ">
                        </textarea>
-                        <span id="ClassErrorInputMessageTag "></span>
-                    </div>
-                    <input class="Boutton text-center mx-auto my-3" type="submit" value="Envoyer le formulaire">
-                </form>
-            </div>
+                    <span id="ClassErrorInputMessageTag "></span>
+                </div>
+                <input class="Boutton text-center mx-auto my-3" type="submit" value="Envoyer le formulaire">
+            </form>
         </section>
     </main>
     <footer>
@@ -102,12 +100,15 @@
             <a href="mailto:cyril.ravot@hotmail.fr">cyril.ravot@hotmail.fr</a>
         </div>
         <div class="Telephone">
-            <span><i class="fas fa-phone-alt"></i></span><span class="bold">Téléphone</span
-                    >06-08-67-71-39
-                </div>
-            <div class="Linkedin">
-                <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i class="fab fa-linkedin-in"></i></a>
-                <span class="bold">Linkedin</span>
+            <span><i class="fas fa-phone-alt"></i></span><span class="bold">Téléphone</span> 06-08-67-71-39
+        </div>
+        <div class="GitHub">
+            <a href="https://github.com/RavotCyril" target="blanck"><i class="fab fa-github"></i></a>
+            <span class="bold">GitHub</span>
+        </div>
+        <div class="Linkedin">
+            <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i class="fab fa-linkedin-in"></i></a>
+            <span class="bold">Linkedin</span>
         </div>
     </footer>
     <!-- bundle js, Popper.js,  Bootstrap JS -->
