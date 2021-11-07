@@ -141,7 +141,6 @@
     #email,
     #message {
         width: 350px;
-        text-align: center;
         margin: 0px auto;
     }
     /* -> Page Contact Class pour mettre les labels du formulaire à gauche*/
@@ -159,6 +158,61 @@
         font-style: italic;
         color: navy;
     }
+    /* Page Projets : Class pour mettre en flex les Icons des langages*/
+    
+    .Description-Icon {
+        color: black;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #Description-Icon-Animation-SEO {
+        color: black;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #Description-Icon-Animation-SEO img {
+        width: auto;
+    }
+    
+    .GitHubProjet {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    /* Page Projets : Class pour mettre l'icon GitHub à la même dimension que les autres Icons langages*/
+    
+    .GitHubProjet i {
+        filter: grayscale(0%);
+        width: 34px;
+        height: 34px;
+        margin: 8px 0px;
+        line-height: 34px;
+        color: white;
+        background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+    }
+    
+    .GitHubProjet:hover i {
+        background: linear-gradient(to left, #000, #07aaaa 50%, #173d79 75%);
+    }
+    /* Page Projets : Class pour mettre en flex les Icons des langages*/
+    
+    .Icons-Langages {
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* Page Projets : Class pour mettre un font size aux Icons des langages*/
+    
+    .Icons-Langages img {
+        width: 50px;
+        height: 50px;
+    }
     /* Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) ---> Page projet*/
     
     #bouttonLogoReservia img,
@@ -166,7 +220,7 @@
     #bouttonLogoPageCorrectifLaChouetteAgence img,
     #bouttonLogoGroupomania img,
     #bouttonLogoOrinoco img,
-    #bouttonLogoSoPekocko img,
+    #bouttonLogoPiiquante img,
     #bouttonLogoPeinture img {
         filter: grayscale(100%);
         opacity: 0.5;
@@ -190,7 +244,7 @@
     #bouttonLogoPageCorrectifLaChouetteAgence img:hover,
     #bouttonLogoOrinoco img:hover,
     #bouttonLogoGroupomania img:hover,
-    #bouttonLogoSoPekocko img:hover,
+    #bouttonLogoPiiquante img:hover,
     #bouttonLogoPeinture img:hover {
         filter: grayscale(0%);
         opacity: 1;
@@ -200,6 +254,13 @@
     h2 {
         font-weight: bold;
     }
+    /* H3 Titre de tous les langages utilisés pour les projets  ---> Page projet */
+    
+    .bold-Langages {
+        color: black;
+        font-weight: bold;
+        margin: 50px 0px 0px 0px;
+    }
     /* Id de tous les Bouttons des projets --> Page projet  */
     
     #bouttonLogoReservia,
@@ -208,7 +269,7 @@
     #bouttonLogoPageCorrectifLaChouetteAgence,
     #bouttonLogoOrinoco,
     #bouttonLogoGroupomania,
-    #bouttonLogoSoPekocko,
+    #bouttonLogoPiiquante,
     #bouttonLogoPeinture {
         background: transparent;
         border: none;
@@ -220,7 +281,7 @@
     #divLienProjetPageOrigineLaChouetteAgence,
     #divLienProjetPageCorrectifLaChouetteAgence,
     #divLienProjetOrinoco,
-    #divLienProjetSoPeckocko,
+    #divLienProjetPiiquante,
     #divLienProjetGroupomania,
     #divLienProjetPeinture {
         display: none;
@@ -366,7 +427,7 @@
         #bouttonLogoPageCorrectifLaChouetteAgence img,
         #bouttonLogoGroupomania img,
         #bouttonLogoOrinoco img,
-        #bouttonLogoSoPekocko img,
+        #bouttonLogoPiiquante img,
         #bouttonLogoPeinture img {
             width: 200px;
         }
@@ -400,7 +461,7 @@
         #bouttonLogoPageCorrectifLaChouetteAgence img,
         #bouttonLogoGroupomania img,
         #bouttonLogoOrinoco img,
-        #bouttonLogoSoPekocko img,
+        #bouttonLogoPiiquante img,
         #bouttonLogoPeinture img {
             filter: grayscale(100%);
             opacity: 0.5;
@@ -488,7 +549,7 @@
         #bouttonLogoPageCorrectifLaChouetteAgence img,
         #bouttonLogoGroupomania img,
         #bouttonLogoOrinoco img,
-        #bouttonLogoSoPekocko img,
+        #bouttonLogoPiiquante img,
         #bouttonLogoPeinture img {
             width: 140px;
         }
@@ -611,7 +672,7 @@
         #bouttonLogoPageCorrectifLaChouetteAgence img,
         #bouttonLogoGroupomania img,
         #bouttonLogoOrinoco img,
-        #bouttonLogoSoPekocko img,
+        #bouttonLogoPiiquante img,
         #bouttonLogoPeinture img {
             width: 140px;
         }

@@ -10,7 +10,7 @@
       let bouttonLogoPageCorrectifLaChouetteAgence = document.getElementById("bouttonLogoPageCorrectifLaChouetteAgence");
       let bouttonLogoOrinoco = document.getElementById("bouttonLogoOrinoco");
       let bouttonLogoGroupomania = document.getElementById("bouttonLogoGroupomania");
-      let bouttonLogoSoPekocko = document.getElementById("bouttonLogoSoPekocko");
+      let bouttonLogoPiiquante = document.getElementById("bouttonLogoPiiquante");
       let bouttonLogoPeinture = document.getElementById("bouttonLogoPeinture");
 
       /* Variable de récupérations des ID dans le html des Liens des projets pour pouvoir mettre le style None  ( avec class ça ne fonctionne pas ) */
@@ -20,7 +20,7 @@
       let divLienProjetPageOrigineLaChouetteAgence = document.getElementById("divLienProjetPageOrigineLaChouetteAgence");
       let divLienProjetPageCorrectifLaChouetteAgence = document.getElementById("divLienProjetPageCorrectifLaChouetteAgence");
       let divLienProjetOrinoco = document.getElementById("divLienProjetOrinoco");
-      let divLienProjetSoPeckocko = document.getElementById("divLienProjetSoPeckocko");
+      let divLienProjetPiiquante = document.getElementById("divLienProjetPiiquante");
       let divLienProjetGroupomania = document.getElementById("divLienProjetGroupomania");
       let divLienProjetPeinture = document.getElementById("divLienProjetPeinture");
 
@@ -68,19 +68,19 @@
           }
       })
       bouttonLogoGroupomania.addEventListener("click", () => {
-          if (getComputedStyle(divLienProjetSoPeckocko).display != "none") {
-              divLienProjetSoPeckocko.style.display = "none";
+          if (getComputedStyle(divLienProjetPiiquante).display != "none") {
+              divLienProjetPiiquante.style.display = "none";
           } else {
-              divLienProjetSoPeckocko.style.display = "block";
+              divLienProjetPiiquante.style.display = "block";
               bouttonLogoGroupomania.style.display = "none";
           }
       })
-      bouttonLogoSoPekocko.addEventListener("click", () => {
+      bouttonLogoPiiquante.addEventListener("click", () => {
           if (getComputedStyle(divLienProjetGroupomania).display != "none") {
               divLienProjetGroupomania.style.display = "none";
           } else {
               divLienProjetGroupomania.style.display = "block";
-              bouttonLogoSoPekocko.style.display = "none";
+              bouttonLogoPiiquante.style.display = "none";
           }
       })
       bouttonLogoPeinture.addEventListener("click", () => {
