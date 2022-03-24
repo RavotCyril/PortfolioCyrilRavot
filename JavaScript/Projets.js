@@ -12,7 +12,6 @@
       let bouttonLogoGroupomania = document.getElementById("bouttonLogoGroupomania");
       let bouttonLogoPiiquante = document.getElementById("bouttonLogoPiiquante");
       let bouttonLogoPeinture = document.getElementById("bouttonLogoPeinture");
-
       /* Variable de récupérations des ID dans le html des Liens des projets pour pouvoir mettre le style None  ( avec class ça ne fonctionne pas ) */
 
       let divLienProjetReservia = document.getElementById("divLienProjetReservia");

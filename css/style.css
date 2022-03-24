@@ -118,10 +118,20 @@
     .Couleur-Div {
         background: #64839b;
     }
-    /*  Page --> Compétences  Class pour les compétences pour enlever les puces des li*/
+    /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
     
     .Competences {
-        text-align: center;
+        display: flex;
+    }
+    /*  Page --> Compétences basique Class pour les compétences pour enlever les puces des li*/
+    
+    .CompetencesBasiques {
+        width: 50%
+    }
+    /*  Page --> Compétences technique Class pour les compétences pour enlever les puces des li*/
+    
+    .CompetencesTechniques {
+        width: 50%
     }
     /* Class pour mettre les inputs du formulaire en flex - Colonnes */
     
