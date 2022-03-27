@@ -22,6 +22,10 @@
     #Main-Partie-Principale-de-La-Page a {
         text-decoration: none;
     }
+    
+    header {
+        background: radial-gradient(white, #000b1e);
+    }
     /* Div principal pour pouvoir mettre la Navigation et la card container cote à cote en flex.  */
     
     .Div-Principal {
@@ -118,20 +122,68 @@
     .Couleur-Div {
         background: #64839b;
     }
+    
+    .H2-Competence-Technique {
+        box-shadow: 0px 0px 9px 5px black;
+    }
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
     
     .Competences {
         display: flex;
     }
-    /*  Page --> Compétences basique Class pour les compétences pour enlever les puces des li*/
     
-    .CompetencesBasiques {
-        width: 50%
+    .Competences h2 {
+        font-size: 1.5rem;
+        box-shadow: 1px 1px 9px 4px black;
     }
-    /*  Page --> Compétences technique Class pour les compétences pour enlever les puces des li*/
     
-    .CompetencesTechniques {
-        width: 50%
+    .Competences a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    li {
+        padding: 10px 10px 20px 10px
+    }
+    
+    .Projet2,
+    .Projet3,
+    .Projet4,
+    .Projet5,
+    .Projet6,
+    .Projet7 {
+        margin: 20px;
+        padding: 5px
+    }
+    
+    .Projet2 {
+        background: radial-gradient(#fffefe, #002e83);
+        box-shadow: 0px 0px 10px 10px black;
+    }
+    
+    .Projet3 {
+        background: radial-gradient(#9c0000, #b35200);
+        box-shadow: 0px 0px 10px 10px black;
+    }
+    
+    .Projet4 {
+        background: radial-gradient(#ffffff, #fcce00);
+        box-shadow: 0px 0px 10px 10px black;
+    }
+    
+    .Projet5 {
+        background: radial-gradient(#ffffff, #ff00aa);
+        box-shadow: 0px 0px 10px 10px black;
+    }
+    
+    .Projet6 {
+        background: radial-gradient(#fffefe, #ff020e);
+        box-shadow: 0px 0px 10px 10px black;
+    }
+    
+    .Projet7 {
+        background: radial-gradient(#fffefe, #002e83);
+        box-shadow: 0px 0px 10px 10px black;
     }
     /* Class pour mettre les inputs du formulaire en flex - Colonnes */
     
@@ -176,17 +228,19 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 5px;
     }
     
-    #Description-Icon-Animation-SEO {
+    .Description-Icon-Animation-SEO {
         color: black;
         font-weight: bold;
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 5px;
     }
     
-    #Description-Icon-Animation-SEO img {
+    .Description-Icon-Animation-SEO img {
         width: auto;
     }
     
@@ -194,6 +248,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 5px;
     }
     /* Page Projets : Class pour mettre l'icon GitHub à la même dimension que les autres Icons langages*/
     
@@ -481,6 +536,14 @@
             width: 200px;
             margin: 20px 0px 0px 0px;
         }
+        /* Page Projets : Class pour mettre en flex les Icons des langages*/
+        .Icons-Langages {
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-evenly;
+            width: 50%;
+            flex-wrap: wrap;
+        }
         .Adresse-Email,
         .Telephone {
             font-size: 1.2rem;
@@ -551,6 +614,14 @@
             padding-top: 45px;
             width: 100%;
             font-size: 1.5rem;
+        }
+        /* Page Projets : Class pour mettre en flex les Icons des langages*/
+        .Icons-Langages {
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-evenly;
+            width: 63%;
+            flex-wrap: wrap;
         }
         /* ->> Page projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) */
         #bouttonLogoReservia img,
@@ -654,6 +725,14 @@
         .Page-A-Propos-Article-Presentation {
             width: 80%;
             margin: 20px auto;
+        }
+        /* Page Projets : Class pour mettre en flex les Icons des langages*/
+        .Icons-Langages {
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+            flex-wrap: wrap;
         }
         #sujet,
         #firstName,
