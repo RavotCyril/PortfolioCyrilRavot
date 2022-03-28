@@ -25,6 +25,8 @@
     
     header {
         background: radial-gradient(white, #000b1e);
+        box-shadow: 0px 0px 3px 3px black;
+        border: 1px solid black;
     }
     /* Div principal pour pouvoir mettre la Navigation et la card container cote à cote en flex.  */
     
@@ -44,6 +46,9 @@
         font-size: 2.5rem;
         text-align: center;
         color: rgb(31, 30, 30);
+        background: radial-gradient(white, #000b1e);
+        box-shadow: 0px 0px 3px 3px black;
+        border: 1px solid black;
     }
     /* Class de la Nav de toutes les pages */
     
@@ -125,16 +130,30 @@
     
     .H2-Competence-Technique {
         font-size: 2.5rem;
-        box-shadow: 0px 0px 9px 5px black;
         margin: 0px auto;
         width: 80%;
-        border: 5px solid black;
+        color: rgb(31, 30, 30);
+        background: radial-gradient(white, #000b1e);
+        box-shadow: 0px 0px 3px 3px black;
+        border: 1px solid black;
     }
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
     
     .Competences h2 {
         font-size: 1.5rem;
         box-shadow: 1px 1px 9px 4px black;
+        background: white;
+    }
+    
+    .Competences-Generales h2 {
+        width: 100%;
+        margin: 0px 0px 50px 0px;
+        font-size: 2rem;
+        text-align: center;
+        color: rgb(31, 30, 30);
+        background: radial-gradient(white, #000b1e);
+        box-shadow: 0px 0px 3px 3px black;
+        border: 1px solid black;
     }
     
     .Competences a {
@@ -391,7 +410,13 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        box-shadow: inset 0px 0px 1px 1px #084775;
+        margin: 0px 0px 5px 0px;
+        font-size: 2.5rem;
+        text-align: center;
+        color: rgb(31, 30, 30);
+        background: radial-gradient(white, #000b1e);
+        box-shadow: 0px 0px 3px 3px black;
+        border: 1px solid black;
     }
     
     footer a {
@@ -411,14 +436,18 @@
         flex-direction: column;
         width: 25%;
         text-align: center;
+        border: 1px solid black;
     }
     
     .Adresse-Email a {
         color: black;
+        margin: 10px 20px;
     }
     
     .Adresse-Email:hover a {
-        color: #311919;
+        color: white;
+        box-shadow: 1px 1px 3px 3px black;
+        border: 1px solid black;
     }
     
     .Adresse-Email i {
@@ -428,7 +457,7 @@
     }
     
     .Adresse-Email:hover {
-        color: #311919;
+        color: white;
     }
     
     .Telephone i {
@@ -438,7 +467,8 @@
     }
     
     .Telephone:hover {
-        color: blue;
+        color: white;
+        box-shadow: 1px 1px 3px 3px black;
     }
     
     .GitHub {
@@ -447,6 +477,7 @@
         flex-direction: column;
         width: 25%;
         text-align: center;
+        border: 1px solid black;
     }
     
     .GitHub i {
@@ -461,6 +492,7 @@
     
     .GitHub:hover i {
         background: linear-gradient(to left, #000, #07aaaa 50%, #173d79 75%);
+        box-shadow: 1px 1px 3px 3px #022847;
     }
     
     .Linkedin {
@@ -469,6 +501,7 @@
         flex-direction: column;
         width: 25%;
         text-align: center;
+        border: 1px solid black;
     }
     
     .Linkedin i {
@@ -482,6 +515,7 @@
     
     .Linkedin:hover i {
         background: rgb(10, 102, 194);
+        box-shadow: 1px 1px 3px 3px #022847;
     }
     
     @media screen and (min-width: 1090px) and (max-width: 1280px)
