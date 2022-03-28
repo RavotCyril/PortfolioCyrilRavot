@@ -124,13 +124,13 @@
     }
     
     .H2-Competence-Technique {
+        font-size: 2.5rem;
         box-shadow: 0px 0px 9px 5px black;
+        margin: 0px auto;
+        width: 80%;
+        border: 5px solid black;
     }
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
-    
-    .Competences {
-        display: flex;
-    }
     
     .Competences h2 {
         font-size: 1.5rem;
@@ -159,31 +159,37 @@
     .Projet2 {
         background: radial-gradient(#fffefe, #002e83);
         box-shadow: 0px 0px 10px 10px black;
+        min-width: 625px;
     }
     
     .Projet3 {
         background: radial-gradient(#9c0000, #b35200);
         box-shadow: 0px 0px 10px 10px black;
+        min-width: 663px;
     }
     
     .Projet4 {
         background: radial-gradient(#ffffff, #fcce00);
         box-shadow: 0px 0px 10px 10px black;
+        min-width: 783px;
     }
     
     .Projet5 {
         background: radial-gradient(#ffffff, #ff00aa);
         box-shadow: 0px 0px 10px 10px black;
+        min-width: 505px;
     }
     
     .Projet6 {
         background: radial-gradient(#fffefe, #ff020e);
         box-shadow: 0px 0px 10px 10px black;
+        min-width: 805px;
     }
     
     .Projet7 {
         background: radial-gradient(#fffefe, #002e83);
         box-shadow: 0px 0px 10px 10px black;
+        min-width: 510px;
     }
     /* Class pour mettre les inputs du formulaire en flex - Colonnes */
     
@@ -536,6 +542,41 @@
             width: 200px;
             margin: 20px 0px 0px 0px;
         }
+        /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
+        .Competences h2 {
+            font-size: 1.2rem;
+            box-shadow: 1px 1px 9px 4px black;
+        }
+        .Projet2 {
+            background: radial-gradient(#fffefe, #002e83);
+            box-shadow: 0px 0px 10px 10px black;
+            min-width: 625px;
+        }
+        .Projet3 {
+            background: radial-gradient(#9c0000, #b35200);
+            box-shadow: 0px 0px 10px 10px black;
+            min-width: 670px;
+        }
+        .Projet4 {
+            background: radial-gradient(#ffffff, #fcce00);
+            box-shadow: 0px 0px 10px 10px black;
+            min-width: 625px;
+        }
+        .Projet5 {
+            background: radial-gradient(#ffffff, #ff00aa);
+            box-shadow: 0px 0px 10px 10px black;
+            min-width: 505px;
+        }
+        .Projet6 {
+            background: radial-gradient(#fffefe, #ff020e);
+            box-shadow: 0px 0px 10px 10px black;
+            min-width: 645px;
+        }
+        .Projet7 {
+            background: radial-gradient(#fffefe, #002e83);
+            box-shadow: 0px 0px 10px 10px black;
+            min-width: 510px;
+        }
         /* Page Projets : Class pour mettre en flex les Icons des langages*/
         .Icons-Langages {
             margin: 20px auto;
@@ -568,6 +609,10 @@
         }
         h2 {
             font-size: 1.2rem;
+        }
+        .H2-Competence-Technique {
+            font-size: 1.2rem;
+            width: 100%;
         }
         .NavListSelectionne {
             font-size: 1rem;
@@ -648,6 +693,20 @@
             font-size: 1.5rem;
             padding: 10px;
         }
+        /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
+        .Competences h2 {
+            font-size: 1rem;
+            box-shadow: 1px 1px 9px 4px black;
+            text-align: center;
+        }
+        .Projet2,
+        .Projet3,
+        .Projet4,
+        .Projet5,
+        .Projet6,
+        .Projet7 {
+            min-width: initial;
+        }
         .Adresse-Email,
         .Telephone {
             width: 25%;
@@ -672,6 +731,10 @@
         }
         h2 {
             font-size: 1rem;
+        }
+        .H2-Competence-Technique {
+            font-size: 1rem;
+            width: 100%;
         }
         .Div-Navigation-Desktop {
             display: none;
@@ -769,6 +832,19 @@
         #bouttonLogoOhmyfood img {
             width: 140px;
             margin: 10px 0px 0px 0px;
+        }
+        /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
+        .Competences h2 {
+            font-size: 1rem;
+            text-align: center;
+        }
+        .Projet2,
+        .Projet3,
+        .Projet4,
+        .Projet5,
+        .Projet6,
+        .Projet7 {
+            min-width: initial;
         }
         .Adresse-Email,
         .Telephone {
