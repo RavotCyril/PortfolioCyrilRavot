@@ -14,10 +14,6 @@ body
     background: #D1C7BD;
 }
 
-.Body-Contact {
-    background: #437081;
-}
-
 
 /* Main Partie Princiaple sur toutes les pages du site */
 
@@ -257,13 +253,6 @@ li {
     flex-direction: column;
 }
 
-
-/* Class pour mettre les formulaires au centre */
-
-#Contact {
-    text-align: center;
-}
-
 #sujet,
 #firstName,
 #lastName,
@@ -271,16 +260,6 @@ li {
 #message {
     width: 350px;
     margin: 0px auto;
-}
-
-
-/* -> Page Contact Class pour mettre les labels du formulaire à gauche*/
-
-label {
-    width: 350px;
-    text-align: left;
-    margin: 0px auto;
-    font-size: 2rem;
 }
 
 
@@ -462,22 +441,6 @@ h2 {
 }
 
 
-/* Page ->> Contact Boutton Formulaire */
-
-.Boutton {
-    background: rgb(70, 70, 70);
-    color: white;
-    font-size: 2rem;
-    border-radius: 30px 30px;
-    border-width: 0px;
-    padding: 20px;
-}
-
-.Boutton:hover {
-    color: black;
-}
-
-
 /* Toutes pages Footer */
 
 footer {
@@ -592,6 +555,15 @@ footer a {
 .Linkedin:hover i {
     background: rgb(10, 102, 194);
     box-shadow: 1px 1px 3px 3px #022847;
+}
+
+.Image-Moi-A-Propos {
+    text-align: center;
+}
+
+.Image-Moi-A-Propos img {
+    width: 360px;
+    height: auto;
 }
 
 @media screen and (min-width: 1090px) and (max-width: 1280px)
@@ -793,16 +765,6 @@ footer a {
         width: 140px;
         margin: 10px 0px 0px 0px;
     }
-    /* -> Page Contact Class pour mettre les labels du formulaire à gauche*/
-    label {
-        width: 85%;
-        font-size: 1.5rem;
-    }
-    /* Page ->> Contact Boutton Formulaire */
-    .Boutton {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
     .Competences h2 {
         font-size: 1rem;
@@ -829,6 +791,10 @@ footer a {
     .Linkedin {
         width: 25%;
         font-size: 0.9rem;
+    }
+    .Image-Moi-A-Propos img {
+        width: 180px;
+        height: auto;
     }
 }
 
@@ -914,16 +880,6 @@ footer a {
     #message {
         width: 85%;
     }
-    /* Page ->> Contact Boutton Formulaire */
-    .Boutton {
-        font-size: 1rem;
-        padding: 10px;
-    }
-    /* -> Page Contact Class pour mettre les labels du formulaire à gauche*/
-    label {
-        width: 85%;
-        font-size: 1rem;
-    }
     footer {
         display: flex;
         flex-direction: column;
@@ -978,5 +934,9 @@ footer a {
         flex-direction: column;
         width: 100%;
         text-align: center;
+    }
+    .Image-Moi-A-Propos img {
+        width: 180px;
+        height: auto;
     }
 }
