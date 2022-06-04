@@ -5,17 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="JavaScript/Nav.js" defer></script>
-    <title>Portfolio Ravot Cyril</title>
 
+    <script src="JavaScript/Formations.js" defer></script>
+    <!-- bundle js, Popper.js,  Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"
+        defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
+        defer></script>
+
+    <title>Portfolio Ravot Cyril</title>
+    <!-- @import '../node_modules/bootstrap/scss/bootstrap'; -->
 </head>
 
 <body>
-
     <header>
         <h1 class="TitreH1-Toute-Page">Développeur Web Cyril Ravot</h1>
         <div class="Navigation-Mobile" id="myTopnav">
@@ -54,6 +69,197 @@
     </header>
     <main>
         <h2 class="text-center my-5">Formations - Diplômes/Certifications</h2>
+        <div class="container-fluid">
+            <div class="DivTitreCertification">
+                <a href="javascript:void(0);" onclick="NavigationFormation()">
+                    <h3>Certification-PDF</h3>
+                </a>
+            </div>
+            <br>
+            <div id="CertificationPDF" class="carousel slide carousel-fade CacheIllustrationFormations"
+                data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Apprenez-A-Programmer-Avec-JavaScript.pdf"
+                                alt="Apprenez à Programmer avec JavaScript" type="application/pdf" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Aprenez-à-créer-votre-site-web-avec-HTML5-et-CSS3.pdf"
+                                type="application/pdf" alt="Apprenez à créer votre site web avec HTML5 et CSS3"
+                                class="galeriePresentationCertification" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Apprenez-à-utiliser-la-ligne-de-commande-dans-un-terminal.pdf"
+                                type="application/pdf"
+                                alt="Apprenez à utiliser la ligne de commande dans un terminal" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Augmentez-Votre-Trafic-Grâce-Au-Référencement-Naturel--SEO.pdf"
+                                type="application/pdf" alt="Certificat Augmentez Votre Trafic avec le SEO" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Concevez-un-contenu-web-accessible.pdf"
+                                type="application/pdf" alt="Certificat Concevez un contenu web accessible" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Créez-des-animations-CSS-Moderne.pdf"
+                                type="application/pdf" alt="Certificat créer des animations CSS moderne" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Créez-Des-Sites-Web-Responsive-Avec-Bootstrap-4.pdf"
+                                type="application/pdf"
+                                alt="Certificat Créer des sites web responsive avec bootstrap-4" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed src="/images/Certificat Open Class Rooms/Certificat-Débutez-Avec-React.pdf"
+                                type="application/pdf" alt="Certificat débutez avec React" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Créer-Une-Application-React-Complete.pdf"
+                                type="application/pdf" alt="Certificat Créer une application React Complète" />
+                        </div>
+                    </div>
+                    <div class="carousel-item active" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Découpez-et-intégrez-une-maquette.pdf"
+                                type="application/pdf" alt="Certificat découper et intégrer une maquette" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Ecrire-Du-Java-Script-Pour-Le-Web.pdf"
+                                type="application/pdf" alt="Certificat écrire du java Script pour le web" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Implémentez-vos-bases-de-données-relationnelles-avec-SQL.pdf"
+                                type="application/pdf"
+                                alt="Certificat implémentez vos bases de données relationnelles avec SQL" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Les-API-REST-Pour-Vos-Projets-Web.pdf"
+                                type="application/pdf" alt="Certificat les API REST pour vos projets web" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Mettez-en-place-votre-environnement-front-end.pdf"
+                                type="application/pdf" alt="Certificat Environnement front-end" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Optimisez-Le-Referencement-De-Votre-Site-SEO-En-Ameliorant-Ses-Performances-Techniques.pdf"
+                                type="application/pdf" alt="Certificat referencement du site SEO" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Passez-Au-Full-Stack-Avec-Node.Js-Express-MongoDB.pdf"
+                                type="application/pdf" alt="Certificat Full Stack avec Node.Js-Express-MongoDB" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Securisez-Vos-Applications-Web-Avec-LOWASP.pdf"
+                                type="application/pdf" alt="Certificat Securisez vos applications web avec LOWASP" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Simplifiez-Vous-le-CSS-avec-Sass.pdf"
+                                type="application/pdf" alt="Certificat simplefiez-vous le CSS avec Sass" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Utiliser-Git-et-GitHub-pour-vos-projets-de-développement.pdf"
+                                type="application/pdf"
+                                alt="Certificat Git et GitHub pour vos projets de développement" />
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="100000">
+                        <div class="galeriePresentationCertification">
+                            <embed
+                                src="/images/Certificat Open Class Rooms/Certificat-Daccomplissement_Les-fondements-de-la-programmation.pdf"
+                                type="application/pdf"
+                                alt="Certificat accomplissement Linkedin les fondements de la programmation" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class=" carousel-control-prev" href="#CertificationPDF" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Précédent</span>
+                </a>
+                <a class="carousel-control-next" href="#CertificationPDF" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Suivant</span>
+                </a>
+                <br>
+                <!-- Indicateurs -->
+                <ul class="carousel-indicators">
+                    <li data-target="#CertificationPDF" data-slide-to="0"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="1"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="2"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="3"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="4"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="5"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="6"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="7"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="8"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="9" class="active"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="10"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="11"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="12"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="13"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="14"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="15"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="16"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="17"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="18"></li>
+                    <li data-target="#CertificationPDF" data-slide-to="19"></li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="Adresse-Email">
@@ -68,15 +274,11 @@
             <span class="bold">GitHub</span>
         </div>
         <div class="Linkedin">
-            <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i
+                    class="fab fa-linkedin-in"></i></a>
             <span class="bold">Linkedin</span>
         </div>
     </footer>
-    <!-- bundle js, Popper.js,  Bootstrap JS -->
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous"></script>
 </body>
 
 </html>
