@@ -66,20 +66,20 @@
               bouttonLogoOrinoco.style.display = "none";
           }
       })
-      bouttonLogoGroupomania.addEventListener("click", () => {
+      bouttonLogoPiiquante.addEventListener("click", () => {
           if (getComputedStyle(divLienProjetPiiquante).display != "none") {
               divLienProjetPiiquante.style.display = "none";
           } else {
               divLienProjetPiiquante.style.display = "block";
-              bouttonLogoGroupomania.style.display = "none";
+              bouttonLogoPiiquante.style.display = "none";
           }
       })
-      bouttonLogoPiiquante.addEventListener("click", () => {
+      bouttonLogoGroupomania.addEventListener("click", () => {
           if (getComputedStyle(divLienProjetGroupomania).display != "none") {
               divLienProjetGroupomania.style.display = "none";
           } else {
               divLienProjetGroupomania.style.display = "block";
-              bouttonLogoPiiquante.style.display = "none";
+              bouttonLogoGroupomania.style.display = "none";
           }
       })
       bouttonLogoPeinture.addEventListener("click", () => {

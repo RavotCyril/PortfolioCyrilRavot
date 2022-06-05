@@ -12,7 +12,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="JavaScript/Nav.js" defer></script>
     <script src="JavaScript/Formations.js" defer></script>
     <!-- bundle js, Popper.js,  Bootstrap JS -->
 
@@ -70,10 +70,12 @@
     <main>
         <h2 class="text-center my-5">Formations - Diplômes/Certifications</h2>
         <div class="container-fluid">
-            <div class="DivTitreCertification">
-                <a href="javascript:void(0);" onclick="NavigationFormation()">
-                    <h3>Certification-PDF</h3>
-                </a>
+            <div class="H3-Formation">
+                <div class="DivTitreCertification">
+                    <a href="javascript:void(0);" onclick="NavigationFormation()">
+                        <h3>Certification-PDF / Diplôme Développeur Web</h3>
+                    </a>
+                </div>
             </div>
             <br>
             <div id="CertificationPDF" class="carousel slide carousel-fade CacheIllustrationFormations"
@@ -217,12 +219,15 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
-                        <div class="galeriePresentationCertification">
-                            <embed
-                                src="/images/Certificat Open Class Rooms/Certificat-Daccomplissement_Les-fondements-de-la-programmation.pdf"
-                                type="application/pdf"
-                                alt="Certificat accomplissement Linkedin les fondements de la programmation" />
-                        </div>
+                        <a class="galeriePresentationCertification" href="/images/Certificat Open Class
+                            Rooms/Certificat-Daccomplissement_Les-fondements-de-la-programmation.pdf">
+                            <div class="galeriePresentationCertification">
+                                <embed
+                                    src="/images/Certificat Open Class Rooms/Certificat-Daccomplissement_Les-fondements-de-la-programmation.pdf"
+                                    type="application/pdf"
+                                    alt="Certificat accomplissement Linkedin les fondements de la programmation" />
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <!-- Controls -->
@@ -262,21 +267,26 @@
         </div>
     </main>
     <footer>
-        <div class="Adresse-Email">
-            <span><i class="fas fa-envelope"></i></span><span class="bold">Email Adress</span>
-            <a href="mailto:cyril.ravot@hotmail.fr">cyril.ravot@hotmail.fr</a>
+        <div class="AdresseEmail-Telephone">
+            <div class="Adresse-Email">
+                <a href="mailto:cyril.ravot@hotmail.fr"><span><i class="fas fa-envelope"></i></span></a>
+                <span class="bold">Email Adress</span>
+                <span>cyril.ravot@hotmail.fr</span>
+            </div>
+            <div class="Telephone">
+                <span><i class="fas fa-phone-alt"></i></span><span class="bold">Téléphone</span> 06-08-67-71-39
+            </div>
         </div>
-        <div class="Telephone">
-            <span><i class="fas fa-phone-alt"></i></span><span class="bold">Téléphone</span> 06-08-67-71-39
-        </div>
-        <div class="GitHub">
-            <a href="https://github.com/RavotCyril" target="blanck"><i class="fab fa-github"></i></a>
-            <span class="bold">GitHub</span>
-        </div>
-        <div class="Linkedin">
-            <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i
-                    class="fab fa-linkedin-in"></i></a>
-            <span class="bold">Linkedin</span>
+        <div class="GitHub-Linkedin">
+            <div class="GitHub">
+                <a href="https://github.com/RavotCyril" target="blanck"><i class="fab fa-github"></i></a>
+                <span class="bold">GitHub</span>
+            </div>
+            <div class="Linkedin">
+                <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <span class="bold">Linkedin</span>
+            </div>
         </div>
     </footer>
 </body>

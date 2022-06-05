@@ -1,15 +1,15 @@
 @font-face
 /* Police des pages */
 
-{
+    {
     font-family: "Roboto Regular";
-    src: url("/Font/Roboto-Regular.ttf") format("truetype");
+    src: url("../Font/Roboto-Regular.ttf") format("truetype");
 }
 
 body
 /* Police sur toute la page */
 
-{
+    {
     font-family: "Roboto Regular", sans-serif;
     background: #D1C7BD;
 }
@@ -22,8 +22,9 @@ body
 }
 
 header {
-    background: radial-gradient(white, #000b1e);
-    box-shadow: 0px 0px 3px 3px black;
+    color: rgb(31, 30, 30);
+    background: radial-gradient(white 87%, #000b1e);
+    box-shadow: 0px 0px 1px 1px black;
     border: 1px solid black;
 }
 
@@ -50,8 +51,8 @@ header {
     font-size: 2.5rem;
     text-align: center;
     color: rgb(31, 30, 30);
-    background: radial-gradient(white, #000b1e);
-    box-shadow: 0px 0px 3px 3px black;
+    background: radial-gradient(white 87%, #000b1e);
+    box-shadow: 0px 0px 1px 1px black;
     border: 1px solid black;
 }
 
@@ -141,68 +142,95 @@ header {
     background: rgba(230, 230, 230, 0.733);
     box-shadow: 1px 5px;
 }
+
 /* L' Id carousels de la page Formation */
 
 #CertificationPDF {
-  position: relative;
+    position: relative;
 }
 
-.galeriePresentationCertification{
+.galeriePresentationCertification {
     position: relative;
     width: 1132px;
     height: 807px;
     overflow: hidden;
     margin: 20px auto;
 }
+
 .galeriePresentationCertification img {
-  width: 100%;
-  height: 100%;
-  object-position: center;
-  object-fit: cover;
-  cursor: zoom-in;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    cursor: zoom-in;
 }
+
 .DivTitreCertification a {
     color: black;
     text-decoration: none;
     width: 50%;
 }
+
+.H3-Formation {
+    display: flex;
+    justify-content: center;
+}
+
 .DivTitreCertification h3 {
     text-align: center;
+    width: 575px;
+    margin: 0px auto;
+    padding: 5px;
 }
+
+.DivTitreCertification h3:hover {
+    background: rgb(10, 102, 194);
+    box-shadow: 1px 1px 3px 3px #022847;
+    color: white;
+}
+
 .CacheIllustrationFormations {
-  Display: none;
+    Display: none;
 }
-.carousel-control-prev, .carousel-control-next {
+
+.carousel-control-prev,
+.carousel-control-next {
     width: 5%;
     text-decoration: none;
 }
- .carousel-control-prev-icon {
+
+.carousel-control-prev-icon {
     width: 64px;
     height: 64px;
     background-color: #134862;
 }
- .carousel-control-next-icon {
+
+.carousel-control-next-icon {
     width: 64px;
     height: 64px;
     background-color: #134862;
 }
+
 .carousel-indicators {
     margin: 0px;
-} 
+}
 
 .carousel-indicators li {
-  background-color: black;
-  height:10px;
-  width:80px;
+    background-color: black;
+    height: 10px;
+    width: 80px;
 }
-.carousel-indicators li:hover{
+
+.carousel-indicators li:hover {
     background-color: #134862;
-    opacity:1;
+    opacity: 1;
 }
-  .carousel-inner embed {
+
+.carousel-inner embed {
     width: 100%;
     height: 100%;
-  }
+}
+
 .Couleur-Div {
     background: #64839b;
 }
@@ -212,7 +240,7 @@ header {
     margin: 0px auto;
     width: 80%;
     color: rgb(31, 30, 30);
-    background: radial-gradient(white, #000b1e);
+    background: radial-gradient(white 35%, #000b1e);
     box-shadow: 0px 0px 3px 3px black;
     border: 1px solid black;
 }
@@ -254,7 +282,7 @@ header {
     font-size: 2rem;
     text-align: center;
     color: rgb(31, 30, 30);
-    background: radial-gradient(white, #000b1e);
+    background: radial-gradient(white 35%, #000b1e);
     box-shadow: 0px 0px 3px 3px black;
     border: 1px solid black;
 }
@@ -263,9 +291,12 @@ header {
     text-decoration: none;
     color: black;
 }
-.Balise-Presentation li, .Competences li {
+
+.Balise-Presentation li,
+.Competences li {
     padding: 10px 10px 20px 10px;
 }
+
 li {
     font-size: 1rem;
     font-weight: bold;
@@ -326,13 +357,22 @@ li {
 
 
 /* Class Paragraphe pour les balises "p" qui donnent la description des sites présentés et les thème principaux 
- des images screenshots avec une couleur bleu et un style italic*/
+ des images screenshots avec une couleur bleu et un style bold*/
 
 .Paragraphe {
-    font-style: italic;
-    color: navy;
+    font-weight: bold;
+    color: black;
 }
 
+.italic {
+    font-style: italic;
+    font-family: "Raleway";
+    font-size: 1.5rem;
+}
+
+#divLienProjetOrinoco a :hover {
+    color: rgb(6, 37, 95);
+}
 
 /* Page Projets : Class pour mettre en flex les Icons des langages*/
 
@@ -343,6 +383,7 @@ li {
     flex-direction: column;
     text-align: center;
     padding: 5px;
+    line-height: 32px;
 }
 
 .Description-Icon-Animation-SEO {
@@ -352,6 +393,7 @@ li {
     flex-direction: column;
     text-align: center;
     padding: 5px;
+    line-height: 32px;
 }
 
 .Description-Icon-Animation-SEO img {
@@ -363,6 +405,7 @@ li {
     flex-direction: column;
     text-align: center;
     padding: 5px;
+    line-height: 32px;
 }
 
 
@@ -370,10 +413,9 @@ li {
 
 .GitHubProjet i {
     filter: grayscale(0%);
-    width: 34px;
-    height: 34px;
-    margin: 8px 0px;
-    line-height: 34px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     color: white;
     background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
 }
@@ -507,14 +549,14 @@ h2 {
 
 footer {
     display: flex;
-    justify-content: center;
     width: 100%;
     margin: 0px 0px 5px 0px;
     font-size: 2.5rem;
     text-align: center;
     color: rgb(31, 30, 30);
-    background: radial-gradient(white, #000b1e);
-    box-shadow: 0px 0px 3px 3px black;
+    background: radial-gradient(white 87%, #000b1e);
+    box-shadow: 0px 0px 1px 1px black;
+    padding: 20px;
     border: 1px solid black;
 }
 
@@ -522,6 +564,11 @@ footer a {
     text-decoration: none;
 }
 
+.AdresseEmail-Telephone,
+.GitHub-Linkedin {
+    display: flex;
+    width: 50%;
+}
 
 /* Toutes pages -> Footer pour mettre en gras les descriptions des Icons. Email-Téléphone- Linkdin */
 
@@ -535,50 +582,50 @@ footer a {
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    width: 25%;
     text-align: center;
-    border: 1px solid black;
+    width: 50%;
 }
 
 .Adresse-Email a {
     color: black;
-    margin: 10px 20px;
-}
-
-.Adresse-Email:hover a {
-    color: white;
-    box-shadow: 1px 1px 3px 3px black;
-    border: 1px solid black;
 }
 
 .Adresse-Email i {
-    filter: grayscale(0%);
+    line-height: 34px;
+    width: 34px;
+    height: 34px;
     margin: 10px 0px;
-    font-size: 1.5rem;
 }
 
-.Adresse-Email:hover {
+.Adresse-Email :hover i {
+    background: rgb(10, 102, 194);
+    box-shadow: 1px 1px 3px 3px #022847;
     color: white;
 }
 
 .Telephone i {
+    line-height: 34px;
+    width: 34px;
+    height: 34px;
     filter: grayscale(0%);
     margin: 10px 0px;
     font-size: 1.5rem;
 }
 
-.Telephone:hover {
+.Telephone :hover i {
+    margin: 10px 0px;
+    font-size: 1.5rem;
+    background: rgb(10, 102, 194);
+    box-shadow: 1px 1px 3px 3px #022847;
     color: white;
-    box-shadow: 1px 1px 3px 3px black;
 }
 
 .GitHub {
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    width: 25%;
     text-align: center;
-    border: 1px solid black;
+    width: 50%;
 }
 
 .GitHub i {
@@ -591,8 +638,8 @@ footer a {
     background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
 }
 
-.GitHub:hover i {
-    background: linear-gradient(to left, #000, #07aaaa 50%, #173d79 75%);
+.GitHub :hover i {
+    background: rgb(10, 102, 194);
     box-shadow: 1px 1px 3px 3px #022847;
 }
 
@@ -600,9 +647,8 @@ footer a {
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    width: 25%;
     text-align: center;
-    border: 1px solid black;
+    width: 50%;
 }
 
 .Linkedin i {
@@ -611,12 +657,13 @@ footer a {
     width: 34px;
     height: 34px;
     line-height: 34px;
-    color: white;
+    color: black;
 }
 
-.Linkedin:hover i {
+.Linkedin :hover i {
     background: rgb(10, 102, 194);
     box-shadow: 1px 1px 3px 3px #022847;
+    color: white;
 }
 
 .Image-Moi-A-Propos {
@@ -631,10 +678,11 @@ footer a {
 @media screen and (min-width: 1090px) and (max-width: 1280px)
 /* styles pour tablettes*/
 
-{
+    {
     .Navigation-Mobile {
         display: none;
     }
+
     /* Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) ---> Page projet*/
     #bouttonLogoReservia img,
     #bouttonLogoOhmyfood img,
@@ -646,19 +694,26 @@ footer a {
     #bouttonLogoPeinture img {
         width: 200px;
     }
+
     #bouttonLogoOhmyfood img {
         width: 200px;
         margin: 20px 0px 0px 0px;
+    }
+
+    .galeriePresentationCertification {
+        width: 71%;
+        height: 56%;
     }
 }
 
 @media screen and (min-width:769px) and (max-width:1089px)
 /* styles pour tablettes*/
 
-{
+    {
     .Navigation-Desktop {
         font-size: 1.5rem;
     }
+
     /* Class des Li dans la navigation */
     .Nav-List-Items {
         color: rgb(31, 30, 30);
@@ -666,9 +721,11 @@ footer a {
         margin: 10px 1px;
         text-align: center;
     }
+
     .Navigation-Mobile {
         display: none;
     }
+
     /* Page ->> projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% )*/
     #bouttonLogoReservia img,
     #bouttonLogoOhmyfood img,
@@ -682,45 +739,59 @@ footer a {
         opacity: 0.5;
         width: 200px;
     }
+
     #bouttonLogoOhmyfood img {
         width: 200px;
         margin: 20px 0px 0px 0px;
     }
+
+    .galeriePresentationCertification {
+        width: 71%;
+        height: 56%;
+    }
+
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
     .Competences h2 {
         font-size: 1.2rem;
         box-shadow: 1px 1px 9px 4px black;
     }
+
     .Projet2 {
         background: radial-gradient(#fffefe, #002e83);
         box-shadow: 0px 0px 10px 10px black;
         min-width: 625px;
     }
+
     .Projet3 {
         background: radial-gradient(#9c0000, #b35200);
         box-shadow: 0px 0px 10px 10px black;
         min-width: 670px;
     }
+
     .Projet4 {
         background: radial-gradient(#ffffff, #fcce00);
         box-shadow: 0px 0px 10px 10px black;
         min-width: 625px;
     }
+
     .Projet5 {
         background: radial-gradient(#ffffff, #ff00aa);
         box-shadow: 0px 0px 10px 10px black;
         min-width: 505px;
     }
+
     .Projet6 {
         background: radial-gradient(#fffefe, #ff020e);
         box-shadow: 0px 0px 10px 10px black;
         min-width: 645px;
     }
+
     .Projet7 {
         background: radial-gradient(#fffefe, #002e83);
         box-shadow: 0px 0px 10px 10px black;
         min-width: 510px;
     }
+
     /* Page Projets : Class pour mettre en flex les Icons des langages*/
     .Icons-Langages {
         margin: 20px auto;
@@ -729,16 +800,18 @@ footer a {
         width: 50%;
         flex-wrap: wrap;
     }
+
     .Adresse-Email,
     .Telephone {
         font-size: 1.2rem;
     }
+
     .Linkedin {
         font-size: 1.2rem;
     }
+
     footer {
         display: flex;
-        justify-content: center;
         width: 100%;
         box-shadow: inset 0px 0px 1px 1px #084775;
     }
@@ -747,56 +820,69 @@ footer a {
 @media screen and (min-width:376px) and (max-width:768px)
 /* styles pour mobile paysage*/
 
-{
+    {
     .TitreH1-Toute-Page {
-        font-size: 1.5rem;
+        font-size: 1.5rem
     }
+
     h2 {
         font-size: 1.2rem;
     }
+
     .H2-Competence-Technique {
         font-size: 1.2rem;
         width: 100%;
     }
+
     .NavListSelectionne {
         font-size: 1rem;
         margin: 0px 0px 5px 0px;
         text-align: center;
     }
+
     .Div-Navigation-Desktop {
         display: none;
     }
+
     .Navigation-Mobile {
         display: block;
     }
+
     .Navigation-Mobile a {
         font-size: 1rem;
         display: none;
     }
+
     .Navigation-Mobile a.icon {
         display: block;
         padding: 10px;
     }
+
     .Navigation-Mobile.responsive {
         position: relative;
     }
+
     .Navigation-Mobile.responsive .icon {
         position: absolute;
         left: 0px;
         top: 0px;
     }
+
     .Navigation-Mobile.responsive a {
         float: none;
         display: block;
         text-align: center;
     }
+
     .Div-Principal {
         display: flex;
         flex-direction: column;
     }
+
     .TitreH1 {
         font-size: 1.7rem;
     }
+
     .Navigation {
         display: flex;
         flex-direction: column;
@@ -804,6 +890,7 @@ footer a {
         width: 100%;
         font-size: 1.5rem;
     }
+
     /* Page Projets : Class pour mettre en flex les Icons des langages*/
     .Icons-Langages {
         margin: 20px auto;
@@ -812,6 +899,7 @@ footer a {
         width: 63%;
         flex-wrap: wrap;
     }
+
     /* ->> Page projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) */
     #bouttonLogoReservia img,
     #bouttonLogoOhmyfood img,
@@ -823,16 +911,28 @@ footer a {
     #bouttonLogoPeinture img {
         width: 140px;
     }
+
     #bouttonLogoOhmyfood img {
         width: 140px;
         margin: 10px 0px 0px 0px;
     }
+
+    .DivTitreCertification h3 {
+        width: 250px;
+    }
+
+    .galeriePresentationCertification {
+        width: 71%;
+        height: 56%;
+    }
+
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
     .Competences h2 {
         font-size: 1rem;
         box-shadow: 1px 1px 9px 4px black;
         text-align: center;
     }
+
     .Projet2,
     .Projet3,
     .Projet4,
@@ -841,75 +941,98 @@ footer a {
     .Projet7 {
         min-width: initial;
     }
+
     .Adresse-Email,
     .Telephone {
-        width: 25%;
         font-size: 0.9rem;
     }
+
     .GitHub {
-        width: 25%;
         font-size: 0.9rem;
     }
+
     .Linkedin {
-        width: 25%;
         font-size: 0.9rem;
     }
+
     .Image-Moi-A-Propos img {
         width: 180px;
         height: auto;
+    }
+
+    .AdresseEmail-Telephone,
+    .GitHub-Linkedin {
+        width: 100%;
+        padding: 25px;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width:375px)
 /* styles pour mobiles portrait */
 
-{
+    {
     .TitreH1-Toute-Page {
         font-size: 1.1rem;
     }
+
     h2 {
         font-size: 1rem;
     }
+
     .H2-Competence-Technique {
         font-size: 1rem;
         width: 100%;
     }
+
     .Div-Navigation-Desktop {
         display: none;
     }
+
     .Navigation-Mobile {
         display: block;
     }
+
     .Navigation-Mobile a {
         display: none;
         font-size: 0.8rem;
     }
+
     .Navigation-Mobile a.icon {
         display: block;
         padding: 10px;
     }
+
     .Navigation-Mobile.responsive {
         position: relative;
     }
+
     .Navigation-Mobile.responsive .icon {
         position: absolute;
         left: 0px;
         top: 0px;
         padding: 5px;
     }
+
     .Navigation-Mobile.responsive a {
         float: none;
         display: block;
         text-align: center;
     }
+
     .Div-Principal {
         display: flex;
         flex-direction: column;
     }
+
     /* Titre h1  */
     .TitreH1 {
         font-size: 1.2rem;
     }
+
     .Navigation {
         display: flex;
         width: 100%;
@@ -918,15 +1041,18 @@ footer a {
         font-size: 1.5rem;
         flex-direction: column;
     }
+
     .NavListSelectionne {
         font-size: 0.8rem;
         margin: 0px 0px 5px 0px;
         text-align: center;
     }
+
     .Page-A-Propos-Article-Presentation {
         width: 80%;
         margin: 20px auto;
     }
+
     /* Page Projets : Class pour mettre en flex les Icons des langages*/
     .Icons-Langages {
         margin: 20px auto;
@@ -935,6 +1061,7 @@ footer a {
         width: 70%;
         flex-wrap: wrap;
     }
+
     #sujet,
     #firstName,
     #lastName,
@@ -942,10 +1069,7 @@ footer a {
     #message {
         width: 85%;
     }
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
+
     /* ->> Page projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) */
     #bouttonLogoReservia img,
     #bouttonLogoOhmyfood img,
@@ -957,15 +1081,28 @@ footer a {
     #bouttonLogoPeinture img {
         width: 140px;
     }
+
     #bouttonLogoOhmyfood img {
         width: 140px;
         margin: 10px 0px 0px 0px;
     }
+
+    .DivTitreCertification h3 {
+        width: 125px;
+        font-size: 0.9rem;
+    }
+
+    .galeriePresentationCertification {
+        width: 71%;
+        height: 56%;
+    }
+
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
     .Competences h2 {
         font-size: 1rem;
         text-align: center;
     }
+
     .Projet2,
     .Projet3,
     .Projet4,
@@ -974,6 +1111,13 @@ footer a {
     .Projet7 {
         min-width: initial;
     }
+
+    .AdresseEmail-Telephone,
+    .GitHub-Linkedin {
+        width: 100%;
+        flex-direction: column;
+    }
+
     .Adresse-Email,
     .Telephone {
         font-size: 0.8rem;
@@ -983,6 +1127,7 @@ footer a {
         text-align: center;
         margin: 10px 0px;
     }
+
     .GitHub {
         font-size: 1.5rem;
         display: flex;
@@ -990,6 +1135,7 @@ footer a {
         width: 100%;
         text-align: center;
     }
+
     .Linkedin {
         font-size: 0.8rem;
         display: flex;
@@ -997,8 +1143,14 @@ footer a {
         width: 100%;
         text-align: center;
     }
+
     .Image-Moi-A-Propos img {
         width: 180px;
         height: auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
     }
 }
