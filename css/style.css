@@ -7,13 +7,58 @@
 }
 
 body
-/* Police sur toute la page */
 
+/* Police sur toute la page */
     {
     font-family: "Roboto Regular", sans-serif;
-    background: #D1C7BD;
 }
 
+.Font-Ecran-Accueil {
+    background-image: url("../Font/wallhaven-rd1vvq.jpg");
+    background-color: #cccccc;
+    height: 1054px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.Font-Ecran-Accueil-Texte {
+    box-shadow: 0px 0px 20px 0px black;
+    padding: 5px;
+    font-size: 2.5rem;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.Flex-Accueil-Contact-Email-GitHub-Linkedin {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 44%;
+    left: 40%;
+    font-size: 3rem;
+    width: 22%;
+    background: white;
+}
+
+.Flex-Accueil-Contact-Email-GitHub-Linkedin i {
+    color: black;
+}
+
+.Flex-Accueil-Contact-Email-GitHub-Linkedin i:hover {
+    background: rgb(10, 102, 194);
+    box-shadow: 1px 1px 3px 3px #022847;
+    color: white;
+}
+
+.Flex-Contact-Email-GitHub-Linkedin a {
+    text-decoration: none;
+}
 
 /* Main Partie Princiaple sur toutes les pages du site */
 
@@ -56,6 +101,16 @@ header {
     border: 1px solid black;
 }
 
+.IndexH2 {
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(31, 30, 30);
+    background: radial-gradient(white);
+    box-shadow: 0px 0px 1px 1px black;
+    border: 1px solid black;
+}
 
 /* Class de la Nav de toutes les pages */
 
@@ -544,6 +599,11 @@ h2 {
     text-align: justify;
 }
 
+.AdresseEmail-Telephone,
+.GitHub-Linkedin {
+    display: flex;
+    width: 50%;
+}
 
 /* Toutes pages Footer */
 
@@ -562,12 +622,6 @@ footer {
 
 footer a {
     text-decoration: none;
-}
-
-.AdresseEmail-Telephone,
-.GitHub-Linkedin {
-    display: flex;
-    width: 50%;
 }
 
 /* Toutes pages -> Footer pour mettre en gras les descriptions des Icons. Email-Téléphone- Linkdin */
