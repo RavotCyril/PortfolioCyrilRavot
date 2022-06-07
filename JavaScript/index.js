@@ -9,14 +9,14 @@ function changeBackgroundImage() {
 	 */
 	var imgCount = 3;
    var randomCount = (Math.floor(Math.random() * imgCount));
-   var images = ['../Font/DeveloppeurWeb.webp', '../Font/fond-ecran-gratuit-pour-ordinateur-3d-14.jpg', '../Font/fonds-ecran-coucher-de-soleil-13.jpg'] ;
+   var images = ['../Font/DeveloppeurWeb.webp', '../Font/fond-ecran-gratuit-pour-ordinateur-3d-14.jpg', '../Font/Full-Stack.jpg'] ;
 	var AccueilFontEcran = document.getElementById("AccueilFontEcran")
 	var H1Principal = document.getElementById("H1Principal")
 	var FontEcranAccueilTexte = document.getElementById("FontEcranAccueilTexte")
 	// var H1Principal = document.getElementById("H1Principal")
 	console.log(randomCount === 0)
 	 if (randomCount === 2){
-	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");height: 988px";
+	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");height: 889px";
 	H1Principal.style.cssText ="color: white";
 	FontEcranAccueilTexte.style.cssText ="color: white";
 	}else if(randomCount === 1){
