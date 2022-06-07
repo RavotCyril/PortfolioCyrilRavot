@@ -9,7 +9,7 @@ function changeBackgroundImage() {
 	 */
 	var imgCount = 3;
    var randomCount = (Math.floor(Math.random() * imgCount));
-   var images = ['../Font/DeveloppeurWeb.webp', '../Font/fond-ecran-gratuit-pour-ordinateur-3d-14.jpg', '../Font/Full-Stack.jpg'] ;
+   var images = ['Font/DeveloppeurWeb.webp', 'Font/fond-ecran-gratuit-pour-ordinateur-3d-14.jpg', 'Font/Full-Stack.jpg'] ;
 	var AccueilFontEcran = document.getElementById("AccueilFontEcran")
 	var H1Principal = document.getElementById("H1Principal")
 	var FontEcranAccueilTexte = document.getElementById("FontEcranAccueilTexte")
