@@ -13,18 +13,20 @@ function changeBackgroundImage() {
 	var AccueilFontEcran = document.getElementById("AccueilFontEcran")
 	var H1Principal = document.getElementById("H1Principal")
 	var FontEcranAccueilTexte = document.getElementById("FontEcranAccueilTexte")
+	var AccueilContactEmailGitHubLinkedin = document.getElementById("AccueilContactEmailGitHubLinkedin")  
+
 	// var H1Principal = document.getElementById("H1Principal")
-	console.log(randomCount === 0)
 	 if (randomCount === 2){
 	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");height: 889px";
-	H1Principal.style.cssText ="color: white";
-	FontEcranAccueilTexte.style.cssText ="color: white";
+	FontEcranAccueilTexte.style.cssText ="color: white;top: 30%;font-size: 2.2rem";
+	AccueilContactEmailGitHubLinkedin.style.cssText="top: 50%;"
 	}else if(randomCount === 1){
 	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");height: 988px";
-
 	}else if (randomCount === 0){
 	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");height: 889px";
-	FontEcranAccueilTexte.style.cssText ="left: 48%";
+	FontEcranAccueilTexte.style.cssText ="left: 48%";	
+	H1Principal.style.cssText ="background-image: url(" + images[randomCount] + ");color: white";
+
 	}
 }
 changeBackgroundImage();

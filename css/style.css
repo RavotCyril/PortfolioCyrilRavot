@@ -34,7 +34,7 @@ body
     color: black;
 }
 
-.Flex-Accueil-Contact-Email-GitHub-Linkedin {
+#AccueilContactEmailGitHubLinkedin {
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -45,17 +45,17 @@ body
     background: white;
 }
 
-.Flex-Accueil-Contact-Email-GitHub-Linkedin i {
+#AccueilContactEmailGitHubLinkedin i {
     color: black;
 }
 
-.Flex-Accueil-Contact-Email-GitHub-Linkedin i:hover {
+#AccueilContactEmailGitHubLinkedin i:hover {
     background: rgb(10, 102, 194);
     box-shadow: 1px 1px 3px 3px #022847;
     color: white;
 }
 
-.Flex-Contact-Email-GitHub-Linkedin a {
+#AccueilContactEmailGitHubLinkedin a {
     text-decoration: none;
 }
 
@@ -86,7 +86,6 @@ header {
     margin: 0px;
 }
 
-
 /* Titre Principal h1 de toutes les pages */
 
 .TitreH1-Toute-Page {
@@ -96,17 +95,6 @@ header {
     text-align: center;
     color: rgb(31, 30, 30);
     box-shadow: 0px 0px 20px 0px black;
-    border: 1px solid black;
-}
-
-.IndexH2 {
-    width: 100%;
-    margin: 0px 0px 50px 0px;
-    font-size: 2.5rem;
-    text-align: center;
-    color: rgb(31, 30, 30);
-    background: radial-gradient(white);
-    box-shadow: 0px 0px 1px 1px black;
     border: 1px solid black;
 }
 
@@ -309,6 +297,9 @@ header {
     position: relative;
 }
 
+.EnleverPuceLi {
+    list-style: none;
+}
 
 /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
 
