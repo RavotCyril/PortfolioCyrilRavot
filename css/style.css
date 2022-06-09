@@ -23,6 +23,7 @@ body
 }
 
 #FontEcranAccueilTexte {
+    font-family: Helvetica Neue;
     margin: 100px 0px 0px 0px;
     padding: 5px;
     font-size: 2.5rem;
@@ -89,6 +90,7 @@ header {
 /* Titre Principal h1 de toutes les pages */
 
 .TitreH1-Toute-Page {
+    font-family: Helvetica Neue;
     width: 100%;
     margin: 0px 0px 50px 0px;
     font-size: 2.5rem;
@@ -212,6 +214,10 @@ header {
     width: 50%;
 }
 
+.H2-Formation {
+    font-family: Helvetica Neue;
+}
+
 .H3-Formation {
     display: flex;
     justify-content: center;
@@ -222,6 +228,7 @@ header {
     width: 575px;
     margin: 0px auto;
     padding: 5px;
+    font-family: Helvetica Neue;
 }
 
 .DivTitreCertification h3:hover {
@@ -277,6 +284,7 @@ header {
 }
 
 .H2-Competence-Technique {
+    font-family: Helvetica Neue;
     font-size: 2.5rem;
     margin: 0px auto;
     width: 80%;
@@ -307,6 +315,7 @@ header {
     font-size: 1.5rem;
     box-shadow: 1px 1px 9px 4px black;
     background: white;
+    font-family: Helvetica Neue;
 }
 
 #MainCompetence .Projet-Titre {
@@ -318,6 +327,7 @@ header {
     text-align: center;
     box-shadow: 1px 1px 3px 3px black;
     font-size: 2rem;
+    color: black;
 }
 
 .Competences-Generales h2 {
@@ -346,38 +356,76 @@ li {
     font-weight: bold;
 }
 
+.ProjetsProjet2 {
+    background: #0065FC;
+    ;
+    box-shadow: 0px 0px 1px 3px black;
+}
+
+.ProjetsProjet3 {
+    background: #b35200;
+    box-shadow: 0px 0px 1px 3px black;
+}
+
+.ProjetsProjet4 {
+    background: #cc8706;
+    box-shadow: 0px 0px 1px 3px black;
+}
+
+.ProjetsProjet5 {
+    background: #975FE8;
+    box-shadow: 0px 0px 1px 3px black;
+}
+
+.ProjetsProjet6 {
+    background: #ff020e;
+    box-shadow: 0px 0px 1px 3px black;
+}
+
+.ProjetsProjet7 {
+    background: #707274;
+    box-shadow: 0px 0px 1px 3px black;
+}
+
+.ProjetsProjet8 {
+    background: url(../Font/ors.jpg);
+    box-shadow: 0px 0px 1px 3px black;
+    font-weight: bold;
+    color: black;
+}
+
 .Projet2 {
-    background: radial-gradient(#fffefe, #002e83);
+    background: #0065FC;
     box-shadow: 0px 0px 10px 10px black;
     min-width: 625px;
 }
 
 .Projet3 {
-    background: radial-gradient(#9c0000, #b35200);
+    background: #b35200;
     box-shadow: 0px 0px 10px 10px black;
     min-width: 663px;
 }
 
 .Projet4 {
-    background: radial-gradient(#ffffff, #fcce00);
+    background: #cc8706;
     box-shadow: 0px 0px 10px 10px black;
     min-width: 783px;
 }
 
 .Projet5 {
-    background: radial-gradient(#ffffff, #ff00aa);
+    background: #975FE8;
     box-shadow: 0px 0px 10px 10px black;
     min-width: 505px;
 }
 
 .Projet6 {
-    background: radial-gradient(#fffefe, #ff020e);
+    background: #ff020e;
     box-shadow: 0px 0px 10px 10px black;
     min-width: 805px;
 }
 
 .Projet7 {
-    background: radial-gradient(#fffefe, #002e83);
+    background: #707274;
     box-shadow: 0px 0px 10px 10px black;
     min-width: 510px;
 }
@@ -403,12 +451,13 @@ li {
 /* Class Paragraphe pour les balises "p" qui donnent la description des sites présentés et les thème principaux 
  des images screenshots avec une couleur bleu et un style bold*/
 
-.Paragraphe {
-    font-weight: bold;
-    color: black;
+.Texte {
+    color: white;
+    font-family: Helvetica Neue;
 }
 
 .italic {
+    font-weight: bold;
     font-style: italic;
     font-family: "Raleway";
     font-size: 1.5rem;
@@ -809,38 +858,26 @@ footer a {
     }
 
     .Projet2 {
-        background: radial-gradient(#fffefe, #002e83);
-        box-shadow: 0px 0px 10px 10px black;
         min-width: 625px;
     }
 
     .Projet3 {
-        background: radial-gradient(#9c0000, #b35200);
-        box-shadow: 0px 0px 10px 10px black;
         min-width: 670px;
     }
 
     .Projet4 {
-        background: radial-gradient(#ffffff, #fcce00);
-        box-shadow: 0px 0px 10px 10px black;
         min-width: 625px;
     }
 
     .Projet5 {
-        background: radial-gradient(#ffffff, #ff00aa);
-        box-shadow: 0px 0px 10px 10px black;
         min-width: 505px;
     }
 
     .Projet6 {
-        background: radial-gradient(#fffefe, #ff020e);
-        box-shadow: 0px 0px 10px 10px black;
         min-width: 645px;
     }
 
     .Projet7 {
-        background: radial-gradient(#fffefe, #002e83);
-        box-shadow: 0px 0px 10px 10px black;
         min-width: 510px;
     }
 
@@ -874,7 +911,7 @@ footer a {
 
     {
     .TitreH1-Toute-Page {
-        font-size: 1.5rem
+        font-size: 1.5rem;
     }
 
     h2 {
