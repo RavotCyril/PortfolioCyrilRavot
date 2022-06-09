@@ -9,7 +9,7 @@ function NavigationFormation() {
         CertificationPDF.className += "carousel slide carousel-fade";
     } else {
         CertificationPDF.className = "CacheIllustrationFormations";
-        CertificationPDF.className.remove("pointer-event");
+        CertificationPDF.classList.remove("pointer-event");
     }
 }
 NavigationFormation()

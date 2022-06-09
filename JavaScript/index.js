@@ -9,7 +9,7 @@ function changeBackgroundImage() {
 	 */
 	var imgCount = 3;
    var randomCount = (Math.floor(Math.random() * imgCount));
-   var images = ['Font/DeveloppeurWeb.webp', 'Font/fond-ecran-gratuit-pour-ordinateur-3d-14.jpg', 'Font/Full-Stack.jpg'] ;
+   var images = ['Font/BackgroundDeveloppeurWeb.webp', 'Font/BackgroundFuturiste.jpg', 'Font/BackgroundPaysageDeveloppeurWeb.jpg'] ;
 	var AccueilFontEcran = document.getElementById("AccueilFontEcran")
 	var H1Principal = document.getElementById("H1Principal")
 	var FontEcranAccueilTexte = document.getElementById("FontEcranAccueilTexte")
@@ -18,7 +18,8 @@ function changeBackgroundImage() {
 	// var H1Principal = document.getElementById("H1Principal")
 	 if (randomCount === 2){
 	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");height: 889px";
-	FontEcranAccueilTexte.style.cssText ="color: white;top: 30%;font-size: 2.2rem";
+	FontEcranAccueilTexte.style.cssText ="color: black;top: 30%;font-size: 2.2rem";
+	H1Principal.style.cssText ="color: white";
 	AccueilContactEmailGitHubLinkedin.style.cssText="top: 50%;"
 	}else if(randomCount === 1){
 	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");height: 988px";

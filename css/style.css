@@ -214,6 +214,16 @@ header {
     width: 50%;
 }
 
+.Div-Formation-Implantation {
+    margin: 0px 0px 0px 50px;
+}
+
+.Div-Formation-Implantation h3 {
+    font-weight: bold;
+    color: black;
+    font-family: Helvetica Neue;
+}
+
 .H2-Formation {
     font-family: Helvetica Neue;
 }
