@@ -13,6 +13,10 @@ body
     font-family: "Roboto Regular", sans-serif;
 }
 
+#AccueilFontEcran {
+    height: 889px
+}
+
 .FontEcranAccueil {
     background-color: #cccccc;
     height: 988px;
@@ -791,6 +795,10 @@ footer a {
 /* styles pour tablettes*/
 
     {
+    #AccueilFontEcran {
+        height: 720px
+    }
+
     .Navigation-Mobile {
         display: none;
     }
@@ -818,10 +826,22 @@ footer a {
     }
 }
 
-@media screen and (min-width:769px) and (max-width:1089px)
-/* styles pour tablettes*/
+@media screen and (min-width:769px) and (max-width:1089px) {
 
-    {
+    #AccueilFontEcran {
+        height: 613px
+    }
+
+    #AccueilContactEmailGitHubLinkedin {
+        font-size: 2rem;
+        margin: -24px 0px 0px -170px;
+    }
+
+    /* styles pour tablettes*/
+    #FontEcranAccueilTexte {
+        font-size: 2.2rem;
+    }
+
     .Navigation-Desktop {
         font-size: 1.5rem;
     }
@@ -921,6 +941,22 @@ footer a {
 /* styles pour mobile paysage*/
 
     {
+    #AccueilFontEcran {
+        height: 432px
+    }
+
+    #AccueilContactEmailGitHubLinkedin {
+        font-size: 2rem;
+        width: 265px;
+        margin: -24px 0px 0px -132px;
+    }
+
+    #FontEcranAccueilTexte {
+        font-size: 1.5rem;
+        margin: 65px 0px 0px 0px;
+        width: 300px;
+    }
+
     .TitreH1-Toute-Page {
         font-size: 1.5rem;
     }
@@ -1075,6 +1111,24 @@ footer a {
 /* styles pour mobiles portrait */
 
     {
+    #AccueilFontEcran {
+        height: 211px;
+    }
+
+    #AccueilContactEmailGitHubLinkedin {
+        margin: -20px 0px 0px -55px;
+        font-size: 1rem;
+        width: 110px;
+        top: 62%;
+        left: 54%;
+    }
+
+    #FontEcranAccueilTexte {
+        font-size: 1rem;
+        margin: 46px 0px 0px 0px;
+        width: 150px;
+    }
+
     .TitreH1-Toute-Page {
         font-size: 1.1rem;
     }
