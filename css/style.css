@@ -17,6 +17,168 @@ body
     height: 889px
 }
 
+.AccueilFooterIconsLangages {
+    background: #6A9ABE;
+}
+
+/* Page Accueil : Class pour mettre en flex les Icons des langages*/
+
+.AccueilFooterIconsLangages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #6A9ABE;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(31, 30, 30);
+    box-shadow: 0px 0px 1px 1px black;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.FooterDivPrincipale {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px
+}
+
+.FooterDivSecondaire {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px
+}
+
+/* Page Accueil : Class pour mettre un width + height à la Div des icons */
+
+.AccueilDescriptionHTML i,
+.AccueilDescriptionCSS i,
+.AccueilDescriptionJS i,
+.AccueilDescriptionBootStrap i,
+.AccueilDescriptionReact i {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+    height: 75px;
+    line-height: 50px;
+    font-size: 3rem;
+}
+
+.AccueilDescriptionMongodbMysqlSeo img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+    height: 75px;
+}
+
+.AccueilDescriptionHTML {
+    font-family: "Helvetica Neue";
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background: #E54D26;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.AccueilDescriptionHTML i {
+    color: white;
+}
+
+.AccueilDescriptionCSS {
+    font-family: "Helvetica Neue";
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background: #3799D6;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.AccueilDescriptionJS {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background: #F0DB4E;
+    color: black;
+    border: 1px solid black;
+}
+
+.AccueilDescriptionBootStrap {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background: #5B3A80;
+    border: 1px solid black;
+}
+
+.AccueilDescriptionBootStrap img {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+.AccueilDescriptionReact {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background: #63DAFC;
+    color: black;
+    border: 1px solid black;
+}
+
+.AccueilDescriptionNodeJS {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background: #81CF01;
+    color: black;
+    border: 1px solid black;
+}
+
+.AccueilDescriptionNodeJS i {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+}
+
+/* Icon Page Accueil */
+.AccueilDescriptionMongodbMysqlSeo {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+
+.AccueilDescriptionExpress {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+
+.AccueilDescriptionExpress img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: 90px;
+}
+
 .FontEcranAccueil {
     background-color: #cccccc;
     height: 988px;
@@ -63,6 +225,15 @@ body
 
 #AccueilContactEmailGitHubLinkedin a {
     text-decoration: none;
+}
+
+.DescriptionLienIcon {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 /* Main Partie Princiaple sur toutes les pages du site */
@@ -842,6 +1013,36 @@ footer a {
         font-size: 2.2rem;
     }
 
+    .FooterDivPrincipale {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 5px;
+        margin: 0px auto;
+    }
+
+    .FooterDivSecondaire {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 5px;
+        margin: 0px auto;
+    }
+
+    .AccueilDescriptionHTML,
+    .AccueilDescriptionCSS,
+    .AccueilDescriptionJS,
+    .AccueilDescriptionBootStrap,
+    .AccueilDescriptionReact,
+    .AccueilDescriptionExpress,
+    .AccueilDescriptionNodeJS,
+    .AccueilDescriptionMongodbMysqlSeo,
+    A {
+        margin: 33px;
+    }
+
     .Navigation-Desktop {
         font-size: 1.5rem;
     }
@@ -955,6 +1156,33 @@ footer a {
         font-size: 1.5rem;
         margin: 65px 0px 0px 0px;
         width: 300px;
+    }
+
+    .FooterDivPrincipale {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    .FooterDivSecondaire {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    .AccueilDescriptionHTML,
+    .AccueilDescriptionCSS,
+    .AccueilDescriptionJS,
+    .AccueilDescriptionBootStrap,
+    .AccueilDescriptionReact,
+    .AccueilDescriptionExpress,
+    .AccueilDescriptionNodeJS,
+    .AccueilDescriptionMongodbMysqlSeo {
+        margin: 33px;
     }
 
     .TitreH1-Toute-Page {
@@ -1127,6 +1355,33 @@ footer a {
         font-size: 1rem;
         margin: 46px 0px 0px 0px;
         width: 150px;
+    }
+
+    .FooterDivPrincipale {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    .FooterDivSecondaire {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    .AccueilDescriptionHTML,
+    .AccueilDescriptionCSS,
+    .AccueilDescriptionJS,
+    .AccueilDescriptionBootStrap,
+    .AccueilDescriptionReact,
+    .AccueilDescriptionExpress,
+    .AccueilDescriptionNodeJS,
+    .AccueilDescriptionMongodbMysqlSeo {
+        margin: 33px;
     }
 
     .TitreH1-Toute-Page {

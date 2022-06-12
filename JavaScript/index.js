@@ -12,16 +12,16 @@ function changeBackgroundImage() {
 
 	var imgCount = 3;
    var randomCount = (Math.floor(Math.random() * imgCount));
-   var images = ['Font/BackgroundDeveloppeurWeb.webp', 'Font/BackgroundFuturiste.jpg', 'Font/BackgroundPaysageDeveloppeurWeb.jpg'] ;
+   var images = ['Font/BackgroundDeveloppeurWeb.webp', 'Font/BackgroundFuturiste.jpg', 'Font/fondDegrade.webp'] ;
 	var AccueilFontEcran = document.getElementById("AccueilFontEcran")
 	var H1Principal = document.getElementById("H1Principal")
 	var FontEcranAccueilTexte = document.getElementById("FontEcranAccueilTexte")
 	var AccueilContactEmailGitHubLinkedin = document.getElementById("AccueilContactEmailGitHubLinkedin")  
 
 	 if (randomCount === 2 ){
-	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ")";
-	FontEcranAccueilTexte.style.cssText ="color:black;top:30%;margin:0px;";
-	H1Principal.style.cssText ="color: white";
+	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");height:600px";
+	FontEcranAccueilTexte.style.cssText ="color:black;position: block;";
+	H1Principal.style.cssText ="color: black;";
 	AccueilContactEmailGitHubLinkedin.style.cssText ="top: 50%";
 	if(mediaQueryCondition.matches){
 	AccueilContactEmailGitHubLinkedin.style.cssText = "margin:0px 0px 0px -55px;top: 50%;left: 50%;";
@@ -32,7 +32,7 @@ function changeBackgroundImage() {
 	}else if (randomCount === 0){
 	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");";
 	FontEcranAccueilTexte.style.cssText ="left: 48%";	
-	H1Principal.style.cssText ="background-image: url(" + images[randomCount] + ");color: white";
+	H1Principal.style.cssText ="background-image: url(" + images[randomCount] + ");color: black;";
 	}
 }
 changeBackgroundImage();
