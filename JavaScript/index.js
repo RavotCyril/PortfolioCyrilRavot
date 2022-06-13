@@ -23,10 +23,7 @@ function changeBackgroundImage() {
 	FontEcranAccueilTexte.style.cssText ="color:black;position: block;";
 	H1Principal.style.cssText ="color: black;";
 	AccueilContactEmailGitHubLinkedin.style.cssText ="top: 50%";
-	if(mediaQueryCondition.matches){
-	AccueilContactEmailGitHubLinkedin.style.cssText = "margin:0px 0px 0px -55px;top: 50%;left: 50%;";
-	console.log("test")
-	 }
+
 	}else if(randomCount === 1){
 	AccueilFontEcran.style.cssText ="background-image: url(" + images[randomCount] + ");height:988px;";
 	}else if (randomCount === 0){
