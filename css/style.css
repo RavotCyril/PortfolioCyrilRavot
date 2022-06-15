@@ -205,7 +205,7 @@ body
     display: flex;
     justify-content: space-around;
     position: absolute;
-    top: 50%;
+    top: 59%;
     left: 50%;
     font-size: 3rem;
     width: 340px;
@@ -244,7 +244,7 @@ body
 
 header {
     color: rgb(31, 30, 30);
-    background: radial-gradient(white 87%, #000b1e);
+    background: #6A9ABE;
     box-shadow: 0px 0px 1px 1px black;
     border: 1px solid black;
 }
@@ -272,7 +272,7 @@ header {
     font-size: 2.5rem;
     text-align: center;
     color: rgb(31, 30, 30);
-    box-shadow: 0px 0px 20px 0px black;
+    background: #6A9ABE;
     border: 1px solid black;
 }
 
@@ -322,7 +322,7 @@ header {
     display: flex;
     padding: 0px;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -330,7 +330,6 @@ header {
 
 .Nav-List-Items {
     color: rgb(31, 30, 30);
-    width: 200px;
     margin: 10px 10px;
     text-align: center;
 }
@@ -475,7 +474,7 @@ header {
     margin: 0px auto;
     width: 80%;
     color: rgb(31, 30, 30);
-    background: radial-gradient(white 35%, #000b1e);
+    background: #4788fb85;
     box-shadow: 0px 0px 3px 3px black;
     border: 1px solid black;
 }
@@ -523,8 +522,8 @@ header {
     font-size: 2rem;
     text-align: center;
     color: rgb(31, 30, 30);
-    background: radial-gradient(white 35%, #000b1e);
-    box-shadow: 0px 0px 3px 3px black;
+    background: #4788fb85;
+    box-shadow: 0px 0px 1px 3px black;
     border: 1px solid black;
 }
 
@@ -535,7 +534,7 @@ header {
 
 .Balise-Presentation li,
 .Competences li {
-    padding: 10px 10px 20px 10px;
+    padding: 10px 0px 20px 0px;
     color: black;
 }
 
@@ -545,42 +544,50 @@ li {
 }
 
 .ProjetsProjet1 {
+    font-size: 1.3rem;
     background: cornflowerblue;
     box-shadow: 0px 0px 1px 3px black;
     padding: 3px 0px;
 }
 
 .ProjetsProjet2 {
+    font-size: 1.3rem;
     background: #0065FC;
     box-shadow: 0px 0px 1px 3px black;
 }
 
 .ProjetsProjet3 {
+    font-size: 1.3rem;
     background: #b35200;
     box-shadow: 0px 0px 1px 3px black;
 }
 
 .ProjetsProjet4 {
+    font-size: 1.3rem;
     background: #cc8706;
     box-shadow: 0px 0px 1px 3px black;
 }
 
 .ProjetsProjet5 {
+    font-size: 1.3rem;
     background: #975FE8;
     box-shadow: 0px 0px 1px 3px black;
 }
 
 .ProjetsProjet6 {
-    background: #ff020e;
+    font-size: 1.3rem;
+    background: #008f85;
     box-shadow: 0px 0px 1px 3px black;
 }
 
 .ProjetsProjet7 {
+    font-size: 1.3rem;
     background: #707274;
     box-shadow: 0px 0px 1px 3px black;
 }
 
 .ProjetsProjet8 {
+    font-size: 1.3rem;
     background: url(../Font/ors.jpg);
     box-shadow: 0px 0px 1px 3px black;
     font-weight: bold;
@@ -618,7 +625,7 @@ li {
 }
 
 .Projet6 {
-    background: #ff020e;
+    background: #008f85;
     box-shadow: 0px 0px 10px 10px black;
     min-width: 805px;
 }
@@ -762,6 +769,15 @@ li {
     opacity: 0.5;
 }
 
+#bouttonLogoGroupomania img,
+#bouttonLogoOrinoco img,
+#bouttonLogoPiiquante img,
+#bouttonLogoPeinture img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    border: 1px solid black;
+}
+
 #bouttonLogoOhmyfood img {
     filter: grayscale(100%);
     opacity: 0.5;
@@ -825,6 +841,14 @@ h2 {
 
 
 /* Id de tous les liens des projets pour mettre le display qui correspond à l'affichage souhaité en java-Script --> Page projet */
+.H2PrincipaleProjet {
+    font-size: 1.8rem;
+    background: #0044af;
+    color: white;
+    padding: 24px;
+    border: 3px solid black;
+    margin: 0px;
+}
 
 #divLienProjetReservia,
 #divLienProjetOhmyfood,
@@ -909,7 +933,7 @@ footer a {
 
 .Adresse-Email :hover i {
     background: rgb(10, 102, 194);
-    box-shadow: 1px 1px 3px 3px #022847;
+    box-shadow: 0px 0px 2px 2px #022847;
     color: white;
 }
 
@@ -926,7 +950,7 @@ footer a {
     margin: 10px 0px;
     font-size: 1.5rem;
     background: rgb(10, 102, 194);
-    box-shadow: 1px 1px 3px 3px #022847;
+    box-shadow: 0px 0px 2px 2px #022847;
     color: white;
 }
 
@@ -950,7 +974,7 @@ footer a {
 
 .GitHub :hover i {
     background: rgb(10, 102, 194);
-    box-shadow: 1px 1px 3px 3px #022847;
+    box-shadow: 0px 0px 2px 2px #022847;
 }
 
 .Linkedin {
@@ -972,7 +996,7 @@ footer a {
 
 .Linkedin :hover i {
     background: rgb(10, 102, 194);
-    box-shadow: 1px 1px 3px 3px #022847;
+    box-shadow: 0px 0px 2px 2px #022847;
     color: white;
 }
 
@@ -1054,18 +1078,6 @@ footer a {
         margin: 0px auto;
     }
 
-    .AccueilDescriptionHTML,
-    .AccueilDescriptionCSS,
-    .AccueilDescriptionJS,
-    .AccueilDescriptionBootStrap,
-    .AccueilDescriptionReact,
-    .AccueilDescriptionExpress,
-    .AccueilDescriptionNodeJS,
-    .AccueilDescriptionMongodbMysqlSeo,
-    A {
-        margin: 33px;
-    }
-
     .Navigation-Desktop {
         font-size: 1.5rem;
     }
@@ -1073,7 +1085,6 @@ footer a {
     /* Class des Li dans la navigation */
     .Nav-List-Items {
         color: rgb(31, 30, 30);
-        width: 180px;
         margin: 10px 1px;
         text-align: center;
     }
