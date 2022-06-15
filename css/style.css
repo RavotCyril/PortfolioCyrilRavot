@@ -236,9 +236,13 @@ body
     overflow: hidden;
 }
 
-/* Main Partie Princiaple sur toutes les pages du site */
+/* Main Partie Principale sur toutes les pages du site */
+#MainPartiePrincipaledeLaPageProjet {
+    background: #64839b;
+    margin: 25px 0px 0px 0px;
+}
 
-#Main-Partie-Principale-de-La-Page a {
+#MainPartiePrincipaledeLaPageProjet a {
     text-decoration: none;
 }
 
@@ -268,12 +272,10 @@ header {
 .TitreH1-Toute-Page {
     font-family: Helvetica Neue;
     width: 100%;
-    margin: 0px 0px 50px 0px;
     font-size: 2.5rem;
     text-align: center;
     color: rgb(31, 30, 30);
     background: #6A9ABE;
-    border: 1px solid black;
 }
 
 /* Class de la Nav de toutes les pages */
@@ -477,6 +479,10 @@ header {
     background: #4788fb85;
     box-shadow: 0px 0px 3px 3px black;
     border: 1px solid black;
+}
+
+#bouttonLogoPeinture img {
+    width: 333px;
 }
 
 .Projet1,
@@ -769,12 +775,12 @@ li {
     opacity: 0.5;
 }
 
+#bouttonLogoPageOrigineLaChouetteAgence img,
+#bouttonLogoPageCorrectifLaChouetteAgence img,
 #bouttonLogoGroupomania img,
 #bouttonLogoOrinoco img,
 #bouttonLogoPiiquante img,
 #bouttonLogoPeinture img {
-    filter: grayscale(100%);
-    opacity: 0.5;
     border: 1px solid black;
 }
 
@@ -1101,8 +1107,6 @@ footer a {
     /* Page ->> projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% )*/
     #bouttonLogoReservia img,
     #bouttonLogoOhmyfood img,
-    #bouttonLogoPageOrigineLaChouetteAgence img,
-    #bouttonLogoPageCorrectifLaChouetteAgence img,
     #bouttonLogoGroupomania img,
     #bouttonLogoOrinoco img,
     #bouttonLogoPiiquante img,
@@ -1110,6 +1114,13 @@ footer a {
         filter: grayscale(100%);
         opacity: 0.5;
         width: 200px;
+    }
+
+    #bouttonLogoPageOrigineLaChouetteAgence img,
+    #bouttonLogoPageCorrectifLaChouetteAgence img {
+        filter: grayscale(100%);
+        opacity: 0.5;
+        width: initial;
     }
 
     #bouttonLogoOhmyfood img {
@@ -1230,6 +1241,8 @@ footer a {
 
     .TitreH1-Toute-Page {
         font-size: 1.5rem;
+        margin: 0px;
+        padding: 15px;
     }
 
     h2 {
@@ -1253,6 +1266,7 @@ footer a {
 
     .Navigation-Mobile {
         display: block;
+        padding: 0px 0px 25px 0px;
     }
 
     .Navigation-Mobile a {
@@ -1435,6 +1449,7 @@ footer a {
 
     .TitreH1-Toute-Page {
         font-size: 1.1rem;
+        margin: 20px 0px;
     }
 
     h2 {
@@ -1452,6 +1467,7 @@ footer a {
 
     .Navigation-Mobile {
         display: block;
+        padding: 0px 0px 25px 0px;
     }
 
     .Navigation-Mobile a {
