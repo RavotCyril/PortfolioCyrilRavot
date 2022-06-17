@@ -232,7 +232,7 @@ body
 }
 
 #AccueilContactEmailGitHubLinkedin i:hover {
-    background: rgb(10, 102, 194);
+    background: #0a58ca;
     box-shadow: 1px 1px 3px 3px #022847;
     color: white;
 }
