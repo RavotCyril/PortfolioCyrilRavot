@@ -79,6 +79,7 @@ body
     background: #E54D26;
     color: white;
     border: 1px solid black;
+    box-shadow: 1px 1px black;
     margin: 5px;
 }
 
@@ -96,6 +97,7 @@ body
     background: #3799D6;
     color: white;
     border: 1px solid black;
+    box-shadow: 1px 1px black;
     margin: 5px;
 }
 
@@ -107,6 +109,7 @@ body
     background: #F0DB4E;
     color: black;
     border: 1px solid black;
+    box-shadow: 1px 1px black;
     margin: 5px;
 }
 
@@ -117,6 +120,7 @@ body
     width: 150px;
     background: #5B3A80;
     border: 1px solid black;
+    box-shadow: 1px 1px black;
     margin: 5px;
 }
 
@@ -134,6 +138,7 @@ body
     background: #63DAFC;
     color: black;
     border: 1px solid black;
+    box-shadow: 1px 1px black;
     margin: 5px;
 }
 
@@ -145,6 +150,7 @@ body
     background: #81CF01;
     color: black;
     border: 1px solid black;
+    box-shadow: 1px 1px black;
     margin: 5px;
 }
 
@@ -166,6 +172,7 @@ body
     background-color: white;
     font-size: 2rem;
     border: 1px solid black;
+    box-shadow: 1px 1px black;
     margin: 5px;
 }
 
@@ -177,6 +184,7 @@ body
     background-color: white;
     font-size: 2rem;
     border: 1px solid black;
+    box-shadow: 1px 1px black;
     margin: 5px;
 }
 
