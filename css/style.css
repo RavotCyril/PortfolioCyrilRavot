@@ -875,6 +875,14 @@ h2 {
     margin: 10px 0px 30px 0px;
 }
 
+.H1Apropos {
+    font-family: Helvetica Neue;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: black;
+    margin: 0px 0px 50px 0px;
+}
 
 /* Class des Span qui entourent les images ScreenShots des projets pour pouvoir modifier la taille des screenshots*/
 
@@ -885,11 +893,23 @@ h2 {
 
 
 /* Page ->> A-Propos  Article-Presentation */
+.MainApropos {
+    background-image: url("../Font/light-blue-waves.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px 50px 0px;
+}
 
 .Page-A-Propos-Article-Presentation {
+    display: flex;
     width: 90%;
-    margin: 20px auto;
+    margin: 0px auto 10px auto;
     text-align: justify;
+}
+
+.DivArticle {
+    color: black;
 }
 
 .AdresseEmail-Telephone,
@@ -1014,12 +1034,13 @@ footer a {
 }
 
 .Image-Moi-A-Propos {
-    text-align: center;
+    text-align: left;
 }
 
 .Image-Moi-A-Propos img {
-    width: 360px;
+    width: 250px;
     height: auto;
+    margin: 0px 50px 0px 0px;
 }
 
 @media screen and (min-width: 1090px) and (max-width: 1280px)
@@ -1396,6 +1417,24 @@ footer a {
         min-width: initial;
     }
 
+    .H1Apropos {
+        font-size: 1.7rem;
+    }
+
+    .Image-Moi-A-Propos {
+        text-align: center;
+    }
+
+    .Page-A-Propos-Article-Presentation {
+        display: initial;
+    }
+
+    .DivArticle {
+        width: 80%;
+        color: black;
+        margin: 0px auto;
+    }
+
     .Adresse-Email,
     .Telephone {
         font-size: 0.9rem;
@@ -1412,6 +1451,7 @@ footer a {
     .Image-Moi-A-Propos img {
         width: 180px;
         height: auto;
+        margin: 0px;
     }
 
     .AdresseEmail-Telephone,
@@ -1637,6 +1677,24 @@ footer a {
         min-width: initial;
     }
 
+    .H1Apropos {
+        font-size: 1.1rem;
+    }
+
+    .Image-Moi-A-Propos {
+        text-align: center;
+    }
+
+    .Page-A-Propos-Article-Presentation {
+        display: initial;
+    }
+
+    .DivArticle {
+        width: 90%;
+        color: black;
+        margin: 0px auto;
+    }
+
     .AdresseEmail-Telephone,
     .GitHub-Linkedin {
         width: 100%;
@@ -1672,6 +1730,7 @@ footer a {
     .Image-Moi-A-Propos img {
         width: 180px;
         height: auto;
+        margin: 0px;
     }
 
     footer {
