@@ -13,6 +13,10 @@ body
     font-family: "Roboto Regular", sans-serif;
 }
 
+a {
+    color: initial;
+}
+
 #AccueilFontEcran {
     height: 889px
 }
@@ -239,7 +243,6 @@ body
 
 #AccueilContactEmailGitHubLinkedin a {
     text-decoration: none;
-    color: none;
 }
 
 .DescriptionLienIcon {
