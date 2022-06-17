@@ -59,7 +59,7 @@ body
     margin-right: auto;
     width: 75px;
     height: 75px;
-    line-height: 50px;
+    line-height: 75px;
     font-size: 3rem;
 }
 
@@ -67,7 +67,6 @@ body
     margin-left: auto;
     margin-right: auto;
     width: 75px;
-    height: 75px;
 }
 
 .AccueilDescriptionHTML {
@@ -80,7 +79,7 @@ body
     background: #E54D26;
     color: white;
     border: 1px solid black;
-    padding: 5px;
+    margin: 5px;
 }
 
 .AccueilDescriptionHTML i {
@@ -97,7 +96,7 @@ body
     background: #3799D6;
     color: white;
     border: 1px solid black;
-    padding: 5px;
+    margin: 5px;
 }
 
 .AccueilDescriptionJS {
@@ -108,6 +107,7 @@ body
     background: #F0DB4E;
     color: black;
     border: 1px solid black;
+    margin: 5px;
 }
 
 .AccueilDescriptionBootStrap {
@@ -117,6 +117,7 @@ body
     width: 150px;
     background: #5B3A80;
     border: 1px solid black;
+    margin: 5px;
 }
 
 .AccueilDescriptionBootStrap img {
@@ -133,6 +134,7 @@ body
     background: #63DAFC;
     color: black;
     border: 1px solid black;
+    margin: 5px;
 }
 
 .AccueilDescriptionNodeJS {
@@ -143,12 +145,16 @@ body
     background: #81CF01;
     color: black;
     border: 1px solid black;
+    margin: 5px;
 }
 
 .AccueilDescriptionNodeJS i {
     margin-left: auto;
     margin-right: auto;
     font-size: 3rem;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
 }
 
 /* Icon Page Accueil */
@@ -160,6 +166,7 @@ body
     background-color: white;
     font-size: 2rem;
     border: 1px solid black;
+    margin: 5px;
 }
 
 .AccueilDescriptionExpress {
@@ -170,13 +177,13 @@ body
     background-color: white;
     font-size: 2rem;
     border: 1px solid black;
+    margin: 5px;
 }
 
 .AccueilDescriptionExpress img {
     margin-left: auto;
     margin-right: auto;
-    width: 90px;
-    height: 90px;
+    width: 135px;
 }
 
 .FontEcranAccueil {
