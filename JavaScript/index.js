@@ -11,21 +11,6 @@ function changeBackgroundImage() {
      const mediaQuery375 = window.matchMedia("(max-width:375px)");
      const mediaQuery376_2000 = window.matchMedia("(min-width:376px) and (max-width:2000px)");
 
-
-     // var width = window.innerWidth;
-     // function reportWindowSize() {
-     //      return width;
-     // }
-     // window.onresize = reportWindowSize;
-     // console.log(width)
-     window.onresize = width();
-     function width() {
-          var width = window.innerWidth;
-          return width;
-     }
-     var width = width();
-     console.log(width)
-
      let imgCount = 3;
      let randomCount = Math.floor(Math.random() * imgCount);
      let images = ["Font/BackgroundDeveloppeurWeb.webp", "Font/BackgroundFuturiste.jpg", "Font/fondDegrade.webp"];
@@ -34,24 +19,32 @@ function changeBackgroundImage() {
      let FontEcranAccueilTexte = document.getElementById("FontEcranAccueilTexte");
      let AccueilContactEmailGitHubLinkedin = document.getElementById("AccueilContactEmailGitHubLinkedin");
 
-     if (randomCount === 2) {
-          AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:600px";
-          FontEcranAccueilTexte.style.cssText = "color:black;position: block;";
-          H1Principal.style.cssText = "color: black;background:none;margin:0px;";
-          AccueilContactEmailGitHubLinkedin.style.cssText = "top:62%";
-     } else if (randomCount === 1) {
-          AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:988px;";
-          H1Principal.style.cssText = "color: black;background:none;margin:0px;";
-          AccueilContactEmailGitHubLinkedin.style.cssText = "top: 38%";
-     } else if (randomCount === 0 && mediaQuery376_2000.matches === true && width >= 375) {
-          AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");";
-          FontEcranAccueilTexte.style.cssText = "left:47%";
-          H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
-          AccueilContactEmailGitHubLinkedin.style.cssText = "top: 50%";
-     } else if (randomCount === 0 && mediaQuery375.matches === true && width <= 375) {
-          AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");";
-          H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
-          AccueilContactEmailGitHubLinkedin.style.cssText = "top: 62%";
+     function taillewidth() {
+          // var width = window.screen.width;
+          // localStorage.setItem("width", JSON.stringify(width));
+          // var tailleLargeurFenetre = JSON.parse(localStorage.getItem("width"));
+
+          if (randomCount === 2) {
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:600px";
+               FontEcranAccueilTexte.style.cssText = "color:black;position: block;";
+               H1Principal.style.cssText = "color: black;background:none;margin:0px;";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "top:62%";
+          } else if (randomCount === 1) {
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:988px;";
+               H1Principal.style.cssText = "color: black;background:none;margin:0px;";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 38%";
+          } else if (randomCount === 0 && mediaQuery376_2000.matches === true) {
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");";
+               FontEcranAccueilTexte.style.cssText = "left:47%";
+               H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 50%";
+          } else if (randomCount === 0 && mediaQuery375.matches === true) {
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");";
+               H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 62%";
+          }
      }
+     taillewidth()
+     window.onresize = taillewidth;
 }
-changeBackgroundImage()
+changeBackgroundImage();
