@@ -56,7 +56,6 @@ a {
 
 .AccueilDescriptionHTML i,
 .AccueilDescriptionCSS i,
-.AccueilDescriptionJS i,
 .AccueilDescriptionBootStrap i,
 .AccueilDescriptionReact i {
     margin-left: auto;
@@ -65,12 +64,6 @@ a {
     height: 75px;
     line-height: 75px;
     font-size: 3rem;
-}
-
-.AccueilDescriptionMongodbMysqlSeo img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75px;
 }
 
 .AccueilDescriptionHTML {
@@ -100,18 +93,6 @@ a {
     width: 150px;
     background: #3799D6;
     color: white;
-    border: 1px solid black;
-    box-shadow: 1px 1px black;
-    margin: 5px;
-}
-
-.AccueilDescriptionJS {
-    display: flex;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    background: #F0DB4E;
-    color: black;
     border: 1px solid black;
     box-shadow: 1px 1px black;
     margin: 5px;
@@ -168,6 +149,24 @@ a {
 }
 
 /* Icon Page Accueil */
+.AccueilDescriptionJavascript {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background: #F7DF1E;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 1px 1px black;
+    margin: 5px;
+}
+
+.AccueilDescriptionJavascript img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
+}
+
 .AccueilDescriptionMongodbMysqlSeo {
     display: flex;
     align-items: center;
@@ -178,6 +177,12 @@ a {
     border: 1px solid black;
     box-shadow: 1px 1px black;
     margin: 5px;
+}
+
+.AccueilDescriptionMongodbMysqlSeo img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75px;
 }
 
 .AccueilDescriptionExpress {
@@ -1279,7 +1284,7 @@ footer a {
 
     .AccueilDescriptionHTML,
     .AccueilDescriptionCSS,
-    .AccueilDescriptionJS,
+    .AccueilDescriptionJavascript,
     .AccueilDescriptionBootStrap,
     .AccueilDescriptionReact,
     .AccueilDescriptionExpress,
@@ -1526,7 +1531,7 @@ footer a {
 
     .AccueilDescriptionHTML,
     .AccueilDescriptionCSS,
-    .AccueilDescriptionJS,
+    .AccueilDescriptionJavascript,
     .AccueilDescriptionBootStrap,
     .AccueilDescriptionReact,
     .AccueilDescriptionExpress,
