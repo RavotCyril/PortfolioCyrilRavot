@@ -12,6 +12,7 @@ function BouttonDynamiqueLogo() {
     let bouttonLogoGroupomania = document.getElementById("bouttonLogoGroupomania");
     let bouttonLogoPiiquante = document.getElementById("bouttonLogoPiiquante");
     let bouttonLogoPeinture = document.getElementById("bouttonLogoPeinture");
+
     /* Variable de récupérations des ID dans le html des Liens des projets pour pouvoir mettre le style None  ( avec class ça ne fonctionne pas ) */
 
     let divLienProjetReservia = document.getElementById("divLienProjetReservia");
@@ -178,7 +179,7 @@ function BouttonDynamiqueLogo() {
     EyeGroupomania.addEventListener("click", () => {
         if (getComputedStyle(divLienProjetGroupomania).display != "none") {
             divLienProjetGroupomania.style.display = "none";
-            bouttonLogoGroupomania.style.display = "initial";
+            bouttonLogoGroupomania.style.display = "inline-block";
         } else {
             divLienProjetGroupomania.style.display = "inline";
             bouttonLogoGroupomania.style.display = "none";
@@ -199,17 +200,17 @@ function BouttonDynamiqueLogo() {
     EyePeinture.addEventListener("click", () => {
         if (getComputedStyle(divLienProjetPeinture).display != "none") {
             divLienProjetPeinture.style.display = "none";
-            bouttonLogoPeinture.style.display = "initial";
+            bouttonLogoPeinture.style.display = "inline-block";
         } else {
             divLienProjetPeinture.style.display = "inline";
-            PiiquanteCachierDescharges.style.display = "inline";
-            bouttonLogoPiiquante.style.display = "none";
-            PiiquanteScreenShoot.style.display = "none";
+            bouttonLogoPeinture.style.display = "none";
+            PeintureCachierDescharges.style.display = "none";
+            PeintureScreenShoot.style.display = "inline";
         }
     })
     bouttonLogoPeinture.addEventListener("click", () => {
         if (getComputedStyle(divLienProjetPeinture).display != "none") {
-            divLienProjetPeinture.style.display = "none";
+            PeintureCachierDescharges.style.display = "none";
         } else {
             divLienProjetPeinture.style.display = "inline";
             PeintureCachierDescharges.style.display = "inline";
