@@ -208,16 +208,6 @@ function BouttonDynamiqueLogo() {
             PeintureScreenShoot.style.display = "inline";
         }
     })
-    bouttonLogoPeinture.addEventListener("click", () => {
-        if (getComputedStyle(divLienProjetPeinture).display != "none") {
-            PeintureCachierDescharges.style.display = "none";
-        } else {
-            divLienProjetPeinture.style.display = "inline";
-            PeintureCachierDescharges.style.display = "inline";
-            bouttonLogoPeinture.style.display = "none";
-            PeintureScreenShoot.style.display = "none";
-        }
-    })
 }
 BouttonDynamiqueLogo()
       /* ----------------------------------------------Fin Function de tous les bouttons  Fin--------------------------------------------*/
