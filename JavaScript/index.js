@@ -41,7 +41,7 @@ function changeBackgroundImage() {
           } else if (randomCount === 0 && mediaQuery375.matches === true) {
                AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");";
                H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
-               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 62%;";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 62%;left:40%;width:165px";
           }
      }
      taillewidth()
