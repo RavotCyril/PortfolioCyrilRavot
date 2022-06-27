@@ -56,7 +56,6 @@ a {
 
 .AccueilDescriptionHTML i,
 .AccueilDescriptionCSS i,
-.AccueilDescriptionBootStrap i,
 .AccueilDescriptionReact i {
     margin-left: auto;
     margin-right: auto;
@@ -103,7 +102,7 @@ a {
     align-items: center;
     height: 150px;
     width: 150px;
-    background: #5B3A80;
+    background: white;
     border: 1px solid black;
     box-shadow: 1px 1px black;
     margin: 5px;
@@ -112,8 +111,7 @@ a {
 .AccueilDescriptionBootStrap img {
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
-    width: 52px;
+    width: 75px;
     height: auto;
 }
 
@@ -236,13 +234,17 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 3rem;
     width: 340px;
     margin: -36px 0px 0px -170px;
 }
 
 #AccueilContactEmailGitHubLinkedin i {
     color: black;
+}
+
+.fab,
+.fas {
+    font-size: 3rem;
 }
 
 #AccueilContactEmailGitHubLinkedin i:hover {
@@ -820,6 +822,7 @@ li {
 .Icons-Langages img {
     width: 50px;
     height: 50px;
+    margin: 0px auto;
 }
 
 /* Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) ---> Page projet*/
@@ -1021,10 +1024,11 @@ footer a {
 }
 
 .Adresse-Email i {
-    line-height: 34px;
-    width: 34px;
-    height: 34px;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
     margin: 10px 0px;
+    font-size: 2rem;
 }
 
 .Adresse-Email :hover i {
@@ -1034,17 +1038,16 @@ footer a {
 }
 
 .Telephone i {
-    line-height: 34px;
-    width: 34px;
-    height: 34px;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
     filter: grayscale(0%);
     margin: 10px 0px;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .Telephone :hover i {
     margin: 10px 0px;
-    font-size: 1.5rem;
     background: rgb(10, 102, 194);
     box-shadow: 0px 0px 2px 2px #022847;
     color: white;
@@ -1061,9 +1064,10 @@ footer a {
 .GitHub i {
     filter: grayscale(0%);
     margin: 10px 0px;
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
     color: white;
     background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
 }
@@ -1084,9 +1088,10 @@ footer a {
 .Linkedin i {
     filter: grayscale(0%);
     margin: 10px 0px;
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
+    line-height: 48px;
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
     color: black;
 }
 

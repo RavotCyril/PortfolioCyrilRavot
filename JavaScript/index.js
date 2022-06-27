@@ -32,16 +32,16 @@ function changeBackgroundImage() {
           } else if (randomCount === 1) {
                AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:988px;";
                H1Principal.style.cssText = "color: black;background:none;margin:0px;";
-               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 38%";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 38%;";
           } else if (randomCount === 0 && mediaQuery376_2000.matches === true) {
                AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");";
                FontEcranAccueilTexte.style.cssText = "left:47%";
                H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
-               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 50%";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 50%;";
           } else if (randomCount === 0 && mediaQuery375.matches === true) {
                AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");";
                H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
-               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 62%";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 62%;";
           }
      }
      taillewidth()
