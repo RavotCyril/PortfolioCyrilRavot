@@ -1346,6 +1346,7 @@ footer a {
         font-size: 1rem;
         margin: 0px 0px 5px 0px;
         text-align: center;
+        padding: 13px;
     }
 
     .Div-Navigation-Desktop {
@@ -1372,15 +1373,15 @@ footer a {
     }
 
     .Navigation-Mobile.responsive .icon {
-        position: absolute;
-        left: 0px;
-        top: 0px;
+        position: initial;
+        width: 52px;
     }
 
     .Navigation-Mobile.responsive a {
         float: none;
         display: block;
         text-align: center;
+        padding: 14px;
     }
 
     .Div-Principal {
@@ -1395,7 +1396,6 @@ footer a {
     .Navigation {
         display: flex;
         flex-direction: column;
-        padding-top: 45px;
         width: 100%;
         font-size: 1.5rem;
     }
@@ -1604,7 +1604,9 @@ footer a {
 
     .Navigation-Mobile a.icon {
         display: block;
-        padding: 10px;
+        padding: 0px;
+        height: 48px;
+        line-height: 48px;
     }
 
     .Navigation-Mobile.responsive {
@@ -1612,16 +1614,20 @@ footer a {
     }
 
     .Navigation-Mobile.responsive .icon {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        padding: 5px;
+        position: initial;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        margin: 10px 0px 0px 10px
     }
 
     .Navigation-Mobile.responsive a {
         float: none;
         display: block;
         text-align: center;
+        padding: 0px;
+        height: 48px;
+        line-height: 48px;
     }
 
     .Div-Principal {
@@ -1638,7 +1644,6 @@ footer a {
         display: flex;
         width: 100%;
         margin-left: 0px;
-        padding-top: 30px;
         font-size: 1.5rem;
         flex-direction: column;
     }
@@ -1647,6 +1652,8 @@ footer a {
         font-size: 0.8rem;
         margin: 0px 0px 5px 0px;
         text-align: center;
+        height: 48px;
+        line-height: 48px;
     }
 
     .Page-A-Propos-Article-Presentation {
