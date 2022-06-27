@@ -670,7 +670,7 @@ li {
 
 .ProjetsProjet8 {
     font-size: 1.3rem;
-    background: url(../Font/ors.jpg);
+    background: url(../Font/ors.webp);
     box-shadow: 0px 0px 1px 3px black;
     font-weight: bold;
     color: black;
@@ -954,7 +954,7 @@ h2 {
 
 /* Page ->> A-Propos  Article-Presentation */
 .MainApropos {
-    background-image: url("../Font/light-blue-waves.jpg");
+    background-image: url("../Font/light-blue-waves.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
