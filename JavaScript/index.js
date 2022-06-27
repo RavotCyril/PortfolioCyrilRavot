@@ -13,7 +13,7 @@ function changeBackgroundImage() {
 
      let imgCount = 3;
      let randomCount = Math.floor(Math.random() * imgCount);
-     let images = ["Font/BackgroundDeveloppeurWeb.webp", "Font/BackgroundFuturiste.jpg", "Font/fondDegrade.webp"];
+     let images = ["Font/BackgroundDeveloppeurWeb.webp", "Font/BackgroundFuturiste.webp", "Font/fondDegrade.webp"];
      let AccueilFontEcran = document.getElementById("AccueilFontEcran");
      let H1Principal = document.getElementById("H1Principal");
      let FontEcranAccueilTexte = document.getElementById("FontEcranAccueilTexte");
