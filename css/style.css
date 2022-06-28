@@ -976,7 +976,6 @@ h2 {
     display: flex;
     width: 90%;
     margin: 0px auto 10px auto;
-    text-align: justify;
 }
 
 .DivArticle {
@@ -1504,6 +1503,7 @@ footer a {
 
     .Page-A-Propos-Article-Presentation {
         display: initial;
+        text-align: justify;
     }
 
     .DivArticle {
@@ -1676,6 +1676,7 @@ footer a {
     .Page-A-Propos-Article-Presentation {
         width: 80%;
         margin: 20px auto;
+        text-align: justify;
     }
 
     .fab,
@@ -1768,6 +1769,7 @@ footer a {
 
     .Page-A-Propos-Article-Presentation {
         display: initial;
+        text-align: justify;
     }
 
     .DivArticle {
