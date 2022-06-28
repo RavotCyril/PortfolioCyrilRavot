@@ -20,7 +20,8 @@
     <script src="JavaScript/Nav.js" defer></script>
     <script src="JavaScript/Formations.js" defer></script>
     <!-- bundle js, Popper.js,  Bootstrap JS -->
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
         defer></script>
@@ -31,9 +32,9 @@
         <h1 id="H1Principal" class="TitreH1-Toute-Page">Développeur Web Cyril RAVOT</h1>
         <div class="Navigation-Mobile" id="myTopnav">
             <nav class="Navigation">
-                <a href="#" class="icon" onclick="NavigationMobile()">
+                <span class="icon" onclick="NavigationMobile()">
                     <i class="fa fa-bars"></i>
-                </a>
+                </span>
                 <a href="index.html">Accueil</a>
                 <span class="NavListSelectionne">Formations</span>
                 <a href="Projets.html">Projets</a>
@@ -117,14 +118,16 @@
                 <div class="carousel-inner">
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Apprenez à Programmer avec JavaScript"
                                 src="images/CertificatOpenClassRooms/Certificat-Apprenez-A-Programmer-Avec-JavaScript.pdf"
-                                alt="Apprenez à Programmer avec JavaScript" type="application/pdf" />
+                                alt="Apprenez à Programmer avec JavaScript" type="application/pdf"
+                                PLUGINSPAGE="https://www.commentcamarche.net/telecharger/web-internet/2627-adobe-shockwave-player/?n=&version=windows">
+                            />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Apprenez à créer votre site web avec HTML5 et CSS3"
                                 src="images/CertificatOpenClassRooms/Certificat-Aprenez-à-créer-votre-site-web-avec-HTML5-et-CSS3.pdf"
                                 type="application/pdf" alt="Apprenez à créer votre site web avec HTML5 et CSS3"
                                 class="galeriePresentationCertification" />
@@ -132,7 +135,7 @@
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Apprenez à utiliser la ligne de commande dans un terminal"
                                 src="images/CertificatOpenClassRooms/Certificat-Apprenez-à-utiliser-la-ligne-de-commande-dans-un-terminal.pdf"
                                 type="application/pdf"
                                 alt="Apprenez à utiliser la ligne de commande dans un terminal" />
@@ -140,27 +143,28 @@
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat Augmentez Votre Trafic avec le SEO"
                                 src="images/CertificatOpenClassRooms/Certificat-Augmentez-Votre-Trafic-Grâce-Au-Référencement-Naturel--SEO.pdf"
                                 type="application/pdf" alt="Certificat Augmentez Votre Trafic avec le SEO" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat Concevez un contenu web accessible"
                                 src="images/CertificatOpenClassRooms/Certificat-Concevez-un-contenu-web-accessible.pdf"
                                 type="application/pdf" alt="Certificat Concevez un contenu web accessible" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed src="images/CertificatOpenClassRooms/Certificat-Créez-des-animations-CSS-Moderne.pdf"
+                            <embed title="Certificat créer des animations CSS moderne"
+                                src="images/CertificatOpenClassRooms/Certificat-Créez-des-animations-CSS-Moderne.pdf"
                                 type="application/pdf" alt="Certificat créer des animations CSS moderne" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat Créer des sites web responsive avec bootstrap-4"
                                 src="images/CertificatOpenClassRooms/Certificat-Créez-Des-Sites-Web-Responsive-Avec-Bootstrap-4.pdf"
                                 type="application/pdf"
                                 alt="Certificat Créer des sites web responsive avec bootstrap-4" />
@@ -168,34 +172,35 @@
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed src="images/CertificatOpenClassRooms/Certificat-Débutez-Avec-React.pdf"
+                            <embed title="Certificat débutez avec React"
+                                src="images/CertificatOpenClassRooms/Certificat-Débutez-Avec-React.pdf"
                                 type="application/pdf" alt="Certificat débutez avec React" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat Créer une application React Complète"
                                 src="images/CertificatOpenClassRooms/Certificat-Créer-Une-Application-React-Complete.pdf"
                                 type="application/pdf" alt="Certificat Créer une application React Complète" />
                         </div>
                     </div>
                     <div class="carousel-item active" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat découper et intégrer une maquette"
                                 src="images/CertificatOpenClassRooms/Certificat-Découpez-et-intégrez-une-maquette.pdf"
                                 type="application/pdf" alt="Certificat découper et intégrer une maquette" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat écrire du java Script pour le web"
                                 src="images/CertificatOpenClassRooms/Certificat-Ecrire-Du-Java-Script-Pour-Le-Web.pdf"
                                 type="application/pdf" alt="Certificat écrire du java Script pour le web" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat implémentez vos bases de données relationnelles avec SQL"
                                 src="images/CertificatOpenClassRooms/Certificat-Implémentez-vos-bases-de-données-relationnelles-avec-SQL.pdf"
                                 type="application/pdf"
                                 alt="Certificat implémentez vos bases de données relationnelles avec SQL" />
@@ -203,48 +208,49 @@
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat les API REST pour vos projets web"
                                 src="images/CertificatOpenClassRooms/Certificat-Les-API-REST-Pour-Vos-Projets-Web.pdf"
                                 type="application/pdf" alt="Certificat les API REST pour vos projets web" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat Environnement front-end"
                                 src="images/CertificatOpenClassRooms/Certificat-Mettez-en-place-votre-environnement-front-end.pdf"
                                 type="application/pdf" alt="Certificat Environnement front-end" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat referencement du site SEO"
                                 src="images/CertificatOpenClassRooms/Certificat-Optimisez-Le-Referencement-De-Votre-Site-SEO-En-Ameliorant-Ses-Performances-Techniques.pdf"
                                 type="application/pdf" alt="Certificat referencement du site SEO" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat Full Stack avec Node.Js-Express-MongoDB"
                                 src="images/CertificatOpenClassRooms/Certificat-Passez-Au-Full-Stack-Avec-Node.Js-Express-MongoDB.pdf"
                                 type="application/pdf" alt="Certificat Full Stack avec Node.Js-Express-MongoDB" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat PDF Certificat Securisez vos applications web avec LOWASP"
                                 src="images/CertificatOpenClassRooms/Certificat-Securisez-Vos-Applications-Web-Avec-LOWASP.pdf"
                                 type="application/pdf" alt="Certificat Securisez vos applications web avec LOWASP" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed src="images/CertificatOpenClassRooms/Certificat-Simplifiez-Vous-le-CSS-avec-Sass.pdf"
+                            <embed title="Certificat simplefiez-vous le CSS avec Sass"
+                                src="images/CertificatOpenClassRooms/Certificat-Simplifiez-Vous-le-CSS-avec-Sass.pdf"
                                 type="application/pdf" alt="Certificat simplefiez-vous le CSS avec Sass" />
                         </div>
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat Git et GitHub pour vos projets de développement"
                                 src="images/CertificatOpenClassRooms/Certificat-Utiliser-Git-et-GitHub-pour-vos-projets-de-développement.pdf"
                                 type="application/pdf"
                                 alt="Certificat Git et GitHub pour vos projets de développement" />
@@ -252,7 +258,7 @@
                     </div>
                     <div class="carousel-item" data-interval="100000">
                         <div class="galeriePresentationCertification">
-                            <embed
+                            <embed title="Certificat accomplissement Linkedin les fondements de la programmation"
                                 src="images/CertificatOpenClassRooms/Certificat-Daccomplissement_Les-fondements-de-la-programmation.pdf"
                                 type="application/pdf"
                                 alt="Certificat accomplissement Linkedin les fondements de la programmation" />
@@ -295,26 +301,6 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="AdresseEmail-Telephone">
-            <div class="Adresse-Email">
-                <a href="mailto:cyril.ravot@hotmail.fr"><span><i class="fas fa-envelope"></i></span></a>
-                <span>cyril.ravot@hotmail.fr</span>
-            </div>
-            <div class="Telephone">
-                <span><i class="fas fa-phone-alt"></i></span>06 08 67 71 39
-            </div>
-        </div>
-        <div class="GitHub-Linkedin">
-            <div class="GitHub">
-                <a href="https://github.com/RavotCyril" target="blanck"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="Linkedin">
-                <a href="https://www.linkedin.com/in/cyril-ravot-a34666121/" target="blanck"><i
-                        class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>

@@ -629,7 +629,7 @@ li {
 
 .ProjetsProjet1 {
     font-size: 1.3rem;
-    background: cornflowerblue;
+    background: #1351AE;
     box-shadow: 0px 0px 1px 3px black;
     padding: 5px;
 }
@@ -650,7 +650,7 @@ li {
 
 .ProjetsProjet4 {
     font-size: 1.3rem;
-    background: #cc8706;
+    background: #7A5000;
     box-shadow: 0px 0px 1px 3px black;
     padding: 5px;
 }
@@ -765,6 +765,8 @@ li {
     display: flex;
     flex-direction: column;
     text-align: center;
+    line-height: 52px;
+    background: white;
 }
 
 .Description-Icon-Animation-SEO {
