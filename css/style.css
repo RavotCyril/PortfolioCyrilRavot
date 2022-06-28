@@ -154,7 +154,7 @@ a {
     align-items: center;
     height: 150px;
     width: 150px;
-    background: #F7DF1E;
+    background: #F0D91F;
     color: black;
     border: 1px solid black;
     box-shadow: 1px 1px black;
@@ -618,6 +618,7 @@ li {
 .Eye {
     font-size: 3rem;
     color: black;
+    margin: 33px;
 }
 
 .Eye i:hover {

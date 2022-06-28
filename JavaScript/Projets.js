@@ -47,7 +47,6 @@ function BouttonDynamiqueLogo() {
     let GroupomaniaScreenShoot = document.getElementById("GroupomaniaScreenShoot")
     let GroupomaniaCachierDescharges = document.getElementById("GroupomaniaCachierDescharges")
     let PeintureScreenShoot = document.getElementById("PeintureScreenShoot")
-    let PeintureCachierDescharges = document.getElementById("PeintureCachierDescharges")
 
     /* Function de tous les bouttons pour utiliser le display none - Block quand on clique sur les images dans les boutons. */
     EyeReservia.addEventListener("click", () => {
@@ -204,7 +203,6 @@ function BouttonDynamiqueLogo() {
         } else {
             divLienProjetPeinture.style.display = "inline";
             bouttonLogoPeinture.style.display = "none";
-            PeintureCachierDescharges.style.display = "none";
             PeintureScreenShoot.style.display = "inline";
         }
     })
