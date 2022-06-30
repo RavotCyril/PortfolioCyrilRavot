@@ -23,7 +23,6 @@ function changeBackgroundImage() {
           // var width = window.screen.width;
           // localStorage.setItem("width", JSON.stringify(width));
           // var tailleLargeurFenetre = JSON.parse(localStorage.getItem("width"));
-          //Empty the pictInfo div
 
           if (randomCount === 2) {
                AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:600px";
