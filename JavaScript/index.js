@@ -8,8 +8,11 @@ puis de l'arrondir à la valeur la plus proche Exemple  2.5 = 3   1.1 =1
 
 function changeBackgroundImage() {
 
+     const mediaQuery1281_2000 = window.matchMedia("(min-width:1281px) and (max-width:2000px)");
+     const mediaQuery1090_1280 = window.matchMedia("(min-width:1090px) and (max-width:1280px)");
+     const mediaQuery769_1089 = window.matchMedia("(min-width:769px) and (max-width:1089px)");
+     const mediaQuery376_768 = window.matchMedia("(min-width:376px) and (max-width:768px)");
      const mediaQuery375 = window.matchMedia("(max-width:375px)");
-     const mediaQuery376_2000 = window.matchMedia("(min-width:376px) and (max-width:2000px)");
 
      let imgCount = 3;
      let randomCount = Math.floor(Math.random() * imgCount);
@@ -25,23 +28,34 @@ function changeBackgroundImage() {
           // var tailleLargeurFenetre = JSON.parse(localStorage.getItem("width"));
 
           if (randomCount === 2) {
-               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:1083px";
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ")";
                FontEcranAccueilTexte.style.cssText = "color:black;position: block;";
                H1Principal.style.cssText = "color: black;background:none;margin:0px;";
-               AccueilContactEmailGitHubLinkedin.style.cssText = "top:41%";
           } else if (randomCount === 1) {
-               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:988px;";
-               H1Principal.style.cssText = "color: black;background:none;margin:0px;";
-               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 45%;";
-          } else if (randomCount === 0 && mediaQuery376_2000.matches === true) {
                AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ")";
-               FontEcranAccueilTexte.style.cssText = "left:47%";
+               H1Principal.style.cssText = "color: black;background:none;margin:0px;";
+          } else if (randomCount === 0 && mediaQuery1281_2000.matches === true) {
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:889px;color: black;"
+               FontEcranAccueilTexte.style.cssText = "color: black;";
                H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
-               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 50%;";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "width: 340px;font-size:2rem;";
+          } else if (randomCount === 0 && mediaQuery1090_1280.matches === true) {
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:720px;color: black;"
+               FontEcranAccueilTexte.style.cssText = "color: black;margin:100px 55px 0px 0px";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "width: 340px;font-size:2rem;";
+          } else if (randomCount === 0 && mediaQuery769_1089.matches === true) {
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:613px;color: black;"
+               FontEcranAccueilTexte.style.cssText = "color: black;margin:55px 55px 0px 0px";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "width: 265px;font-size:2rem";
+          } else if (randomCount === 0 && mediaQuery376_768.matches === true) {
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:432px;color: black;"
+               FontEcranAccueilTexte.style.cssText = "color: black;width:100%;padding:15px 35px 0px 0px;margin:0px";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "width: 265px;font-size:2rem;padding: 50px 0px;";
           } else if (randomCount === 0 && mediaQuery375.matches === true) {
-               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");";
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:211px;";
+               FontEcranAccueilTexte.style.cssText = "width:150px;color: black;width:150px;padding:15px 0px 0px 0px;margin:0px auto";
                H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
-               AccueilContactEmailGitHubLinkedin.style.cssText = "top: 62%;left:40%;width:165px";
+               AccueilContactEmailGitHubLinkedin.style.cssText = "padding:0px;width:150px;margin-bottom:35px;margin-left:auto;margin-right:auto;";
           }
      }
      taillewidth()
