@@ -25,16 +25,16 @@ function changeBackgroundImage() {
           // var tailleLargeurFenetre = JSON.parse(localStorage.getItem("width"));
 
           if (randomCount === 2) {
-               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");100%;height:1083px";
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:1083px";
                FontEcranAccueilTexte.style.cssText = "color:black;position: block;";
                H1Principal.style.cssText = "color: black;background:none;margin:0px;";
                AccueilContactEmailGitHubLinkedin.style.cssText = "top:41%";
           } else if (randomCount === 1) {
-               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");width:100%;height:988px;";
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");height:988px;";
                H1Principal.style.cssText = "color: black;background:none;margin:0px;";
                AccueilContactEmailGitHubLinkedin.style.cssText = "top: 45%;";
           } else if (randomCount === 0 && mediaQuery376_2000.matches === true) {
-               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ");width:100%;";
+               AccueilFontEcran.style.cssText = "background-image: url(" + images[randomCount] + ")";
                FontEcranAccueilTexte.style.cssText = "left:47%";
                H1Principal.style.cssText = "background-image: url(" + images[randomCount] + ");color: black;background:none;margin:0px;";
                AccueilContactEmailGitHubLinkedin.style.cssText = "top: 50%;";
