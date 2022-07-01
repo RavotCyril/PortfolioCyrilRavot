@@ -13,8 +13,27 @@ body
     font-family: "Roboto Regular", sans-serif;
 }
 
+header {
+    color: black;
+    background: #6A9ABE;
+    box-shadow: 0px 0px 1px 1px black;
+    border: 1px solid black;
+}
+
 a {
     color: initial;
+}
+
+/* H2 Titre de tous les projets  ---> Page projet */
+
+h2 {
+    font-weight: bold;
+}
+
+li {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
 }
 
 #AccueilFontEcran {
@@ -57,7 +76,8 @@ a {
 
 .AccueilDescriptionHTML i,
 .AccueilDescriptionCSS i,
-.AccueilDescriptionReact i {
+.AccueilDescriptionReact i,
+.AccueilDescriptionNodeJS i {
     margin-left: auto;
     margin-right: auto;
     width: 75px;
@@ -66,18 +86,28 @@ a {
     font-size: 3rem;
 }
 
-.AccueilDescriptionHTML {
-    font-family: "Helvetica Neue";
+.AccueilDescriptionHTML,
+.AccueilDescriptionCSS,
+.AccueilDescriptionBootStrap,
+.AccueilDescriptionReact,
+.AccueilDescriptionNodeJS,
+.AccueilDescriptionJavascript,
+.AccueilDescriptionMongodbMysqlSeo,
+.AccueilDescriptionExpress {
+    font-family: Helvetica Neue;
     display: flex;
-    flex-direction: column-reverse;
     align-items: center;
-    height: 150px;
     width: 150px;
-    background: #E54D26;
-    color: white;
+    height: 150px;
     border: 1px solid black;
     box-shadow: 1px 1px black;
     margin: 5px;
+}
+
+.AccueilDescriptionHTML {
+    flex-direction: column-reverse;
+    background: #E54D26;
+    color: white;
 }
 
 .AccueilDescriptionHTML i {
@@ -85,102 +115,17 @@ a {
 }
 
 .AccueilDescriptionCSS {
-    font-family: "Helvetica Neue";
-    display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    height: 150px;
-    width: 150px;
     background: #3799D6;
     color: white;
-    border: 1px solid black;
-    box-shadow: 1px 1px black;
-    margin: 5px;
 }
 
 .AccueilDescriptionBootStrap {
-    display: flex;
-    align-items: center;
-    height: 150px;
-    width: 150px;
     background: white;
-    border: 1px solid black;
-    box-shadow: 1px 1px black;
-    margin: 5px;
 }
 
-.AccueilDescriptionBootStrap img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75px;
-    height: auto;
-}
-
-.AccueilDescriptionReact {
-    display: flex;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    background: #63DAFC;
-    color: black;
-    border: 1px solid black;
-    box-shadow: 1px 1px black;
-    margin: 5px;
-}
-
-.AccueilDescriptionNodeJS {
-    display: flex;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    background: #81CF01;
-    color: black;
-    border: 1px solid black;
-    box-shadow: 1px 1px black;
-    margin: 5px;
-}
-
-.AccueilDescriptionNodeJS i {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 3rem;
-    width: 75px;
-    height: 75px;
-    line-height: 75px;
-}
-
-/* Icon Page Accueil */
-.AccueilDescriptionJavascript {
-    display: flex;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    background: #F0D91F;
-    color: black;
-    border: 1px solid black;
-    box-shadow: 1px 1px black;
-    margin: 5px;
-}
-
-.AccueilDescriptionJavascript img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75px;
-    height: auto;
-}
-
-.AccueilDescriptionMongodbMysqlSeo {
-    display: flex;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-    background-color: white;
-    font-size: 2rem;
-    border: 1px solid black;
-    box-shadow: 1px 1px black;
-    margin: 5px;
-}
-
+.AccueilDescriptionBootStrap img,
+.AccueilDescriptionJavascript img,
 .AccueilDescriptionMongodbMysqlSeo img {
     margin-left: auto;
     margin-right: auto;
@@ -188,16 +133,30 @@ a {
     height: auto;
 }
 
-.AccueilDescriptionExpress {
-    display: flex;
-    align-items: center;
-    height: 150px;
-    width: 150px;
+.AccueilDescriptionReact {
+    background: #63DAFC;
+    color: black;
+}
+
+.AccueilDescriptionNodeJS {
+    background: #81CF01;
+    color: black;
+}
+
+/* Icon Page Accueil */
+.AccueilDescriptionJavascript {
+    background: #F0D91F;
+    color: black;
+}
+
+.AccueilDescriptionMongodbMysqlSeo {
     background-color: white;
     font-size: 2rem;
-    border: 1px solid black;
-    box-shadow: 1px 1px black;
-    margin: 5px;
+}
+
+.AccueilDescriptionExpress {
+    background-color: white;
+    font-size: 2rem;
 }
 
 .AccueilDescriptionExpress img {
@@ -273,13 +232,6 @@ a {
 
 #MainPartiePrincipaledeLaPageProjet a {
     text-decoration: none;
-}
-
-header {
-    color: black;
-    background: #6A9ABE;
-    box-shadow: 0px 0px 1px 1px black;
-    border: 1px solid black;
 }
 
 
@@ -585,11 +537,6 @@ header {
     color: black;
 }
 
-li {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: black;
-}
 
 #Reservia,
 #Ohmyfood,
@@ -615,103 +562,95 @@ li {
     color: black;
 }
 
-.ProjetsProjet1 {
+.ProjetsProjet1,
+.ProjetsProjet2,
+.ProjetsProjet3,
+.ProjetsProjet4,
+.ProjetsProjet5,
+.ProjetsProjet6,
+.ProjetsProjet7,
+.ProjetsProjet8 {
     font-size: 1.3rem;
-    background: #1351AE;
     box-shadow: 0px 0px 1px 3px black;
     padding: 5px;
+}
+
+.ProjetsProjet1 {
+    background: #1351AE;
 }
 
 .ProjetsProjet2 {
-    font-size: 1.3rem;
     background: #0065FC;
-    box-shadow: 0px 0px 1px 3px black;
-    padding: 5px;
 }
 
 .ProjetsProjet3 {
-    font-size: 1.3rem;
     background: #b35200;
-    box-shadow: 0px 0px 1px 3px black;
-    padding: 5px;
 }
 
 .ProjetsProjet4 {
-    font-size: 1.3rem;
     background: #7A5000;
-    box-shadow: 0px 0px 1px 3px black;
-    padding: 5px;
 }
 
 .ProjetsProjet5 {
-    font-size: 1.3rem;
     background: #975FE8;
-    box-shadow: 0px 0px 1px 3px black;
-    padding: 5px;
 }
 
 .ProjetsProjet6 {
-    font-size: 1.3rem;
     background: #008f85;
-    box-shadow: 0px 0px 1px 3px black;
-    padding: 5px;
 }
 
 .ProjetsProjet7 {
-    font-size: 1.3rem;
     background: #707274;
-    box-shadow: 0px 0px 1px 3px black;
-    padding: 5px;
 }
 
 .ProjetsProjet8 {
-    font-size: 1.3rem;
     background: url(../Font/ors.webp);
-    box-shadow: 0px 0px 1px 3px black;
     font-weight: bold;
     color: black;
-    padding: 5px;
+}
+
+.Projet1,
+.Projet2,
+.Projet3,
+.Projet4,
+.Projet5,
+.Projet6,
+.Projet7 {
+    box-shadow: 0px 0px 10px 10px black;
 }
 
 .Projet1 {
     background: #0065FC;
-    box-shadow: 0px 0px 10px 10px black;
     min-width: 625px;
 }
 
 .Projet2 {
     background: cornflowerblue;
-    box-shadow: 0px 0px 10px 10px black;
     min-width: 625px;
 }
 
 .Projet3 {
     background: #b35200;
-    box-shadow: 0px 0px 10px 10px black;
     min-width: 663px;
 }
 
 .Projet4 {
     background: #cc8706;
-    box-shadow: 0px 0px 10px 10px black;
     min-width: 783px;
 }
 
 .Projet5 {
     background: #975FE8;
-    box-shadow: 0px 0px 10px 10px black;
     min-width: 505px;
 }
 
 .Projet6 {
     background: #008f85;
-    box-shadow: 0px 0px 10px 10px black;
     min-width: 805px;
 }
 
 .Projet7 {
     background: #707274;
-    box-shadow: 0px 0px 10px 10px black;
     min-width: 510px;
 }
 
@@ -876,13 +815,6 @@ li {
     filter: grayscale(0%);
     opacity: 1;
 }
-
-/* H2 Titre de tous les projets  ---> Page projet */
-
-h2 {
-    font-weight: bold;
-}
-
 
 /* H3 Titre de tous les langages utilisés pour les projets  ---> Page projet */
 
@@ -1173,7 +1105,6 @@ footer a {
 
     #LienFeedly img {
         width: 375px;
-        height: auto;
     }
 
     /* Page ->> projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% )*/
@@ -1208,23 +1139,16 @@ footer a {
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
     .Competences h2 {
         font-size: 1.2rem;
-        box-shadow: 1px 1px 9px 4px black;
     }
 
-    .Projet1 {
-        min-width: 625px;
-    }
-
-    .Projet2 {
+    .Projet1,
+    .Projet2,
+    .Projet4 {
         min-width: 625px;
     }
 
     .Projet3 {
         min-width: 670px;
-    }
-
-    .Projet4 {
-        min-width: 625px;
     }
 
     .Projet5 {
@@ -1242,8 +1166,6 @@ footer a {
     /* Page Projets : Class pour mettre en flex les Icons des langages*/
     .Icons-Langages {
         margin: 20px auto;
-        display: flex;
-        justify-content: space-evenly;
         width: 50%;
         flex-wrap: wrap;
     }
@@ -1258,8 +1180,6 @@ footer a {
     }
 
     footer {
-        display: flex;
-        width: 100%;
         box-shadow: inset 0px 0px 1px 1px #084775;
     }
 }
@@ -1379,15 +1299,12 @@ footer a {
     /* Page Projets : Class pour mettre en flex les Icons des langages*/
     .Icons-Langages {
         margin: 20px auto;
-        display: flex;
-        justify-content: space-evenly;
         width: 63%;
         flex-wrap: wrap;
     }
 
     #LienFeedly img {
         width: 230px;
-        height: auto;
     }
 
     /* ->> Page projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) */
@@ -1439,7 +1356,6 @@ footer a {
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
     .Competences h2 {
         font-size: 1rem;
-        box-shadow: 1px 1px 9px 4px black;
         text-align: center;
     }
 
@@ -1468,7 +1384,6 @@ footer a {
 
     .DivArticle {
         width: 80%;
-        color: black;
         margin: 0px auto;
     }
 
@@ -1635,15 +1550,12 @@ footer a {
     /* Page Projets : Class pour mettre en flex les Icons des langages*/
     .Icons-Langages {
         margin: 20px auto;
-        display: flex;
-        justify-content: space-evenly;
         width: 70%;
         flex-wrap: wrap;
     }
 
     #LienFeedly img {
         width: 150px;
-        height: auto;
     }
 
     /* ->> Page projet Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) */
@@ -1723,7 +1635,6 @@ footer a {
 
     .DivArticle {
         width: 90%;
-        color: black;
         margin: 0px auto;
     }
 
@@ -1736,37 +1647,26 @@ footer a {
     .Adresse-Email,
     .Telephone {
         font-size: 0.8rem;
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        text-align: center;
         margin: 10px 0px;
     }
 
     .GitHub {
         font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        text-align: center;
     }
 
     .Linkedin {
         font-size: 0.8rem;
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        text-align: center;
     }
 
     .Image-Moi-A-Propos img {
         width: 180px;
-        height: auto;
         margin: 0px;
     }
 
     footer {
-        display: flex;
         flex-direction: column;
     }
 }
