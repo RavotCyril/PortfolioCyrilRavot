@@ -1112,10 +1112,6 @@ footer a {
 
     {
 
-    .Navigation-Mobile {
-        display: none;
-    }
-
     /* Id des boutons des images de tous les projets avec un Grayscale (Noir et blanc 100% ) ---> Page projet*/
     #bouttonLogoReservia img,
     #bouttonLogoOhmyfood img,
@@ -1152,18 +1148,14 @@ footer a {
 
     .FooterDivPrincipale {
         width: 70%;
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
         padding: 5px;
         margin: 0px auto;
     }
 
     .FooterDivSecondaire {
         width: 70%;
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
         padding: 5px;
         margin: 0px auto;
     }
@@ -1177,10 +1169,6 @@ footer a {
         color: black;
         margin: 10px 1px;
         text-align: center;
-    }
-
-    .Navigation-Mobile {
-        display: none;
     }
 
     #LienFeedly img {
@@ -1293,17 +1281,13 @@ footer a {
 
     .FooterDivPrincipale {
         width: 100%;
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
         padding: 0px;
     }
 
     .FooterDivSecondaire {
         width: 100%;
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
         padding: 0px;
     }
 
@@ -1378,7 +1362,6 @@ footer a {
     }
 
     .Div-Principal {
-        display: flex;
         flex-direction: column;
     }
 
@@ -1536,17 +1519,13 @@ footer a {
 
     .FooterDivPrincipale {
         width: 100%;
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
         padding: 0px;
     }
 
     .FooterDivSecondaire {
         width: 100%;
-        display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
         padding: 0px;
     }
 
@@ -1618,7 +1597,6 @@ footer a {
     }
 
     .Div-Principal {
-        display: flex;
         flex-direction: column;
     }
 
@@ -1686,7 +1664,8 @@ footer a {
     }
 
     .H2-Formation {
-        font-size: 1.5rem;
+        width: 100%;
+        font-size: 1rem;
     }
 
     .Div-Formation-Implantation {
