@@ -5,26 +5,26 @@
 puis de l'arrondir à la valeur la plus proche Exemple  2.5 = 3   1.1 =1
     */
 // // Crée une condition de média qui cible des fenêtres d'au moins 375  pixels et en dessous de largeur ( BreakPoint en JavaScript)
-// document.addEventListener("DOMContentLoaded", function () {
 
 /* Lazy Load pour précharger le background-image que quand il est visible */
+document.addEventListener("DOMContentLoaded", function () {
 
-var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-bg"));
+     var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-bg"));
 
-if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
-     let lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
-          entries.forEach(function (entry) {
-               if (entry.isIntersecting) {
-                    entry.target.classList.add("bg-visible");
-                    lazyBackgroundObserver.unobserve(entry.target);
-               }
+     if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
+          let lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+               entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                         entry.target.classList.add("bg-visible");
+                         lazyBackgroundObserver.unobserve(entry.target);
+                    }
+               });
           });
-     });
 
-     lazyBackgrounds.forEach(function (lazyBackground) {
-          lazyBackgroundObserver.observe(lazyBackground);
-     });
-}
+          lazyBackgrounds.forEach(function (lazyBackground) {
+               lazyBackgroundObserver.observe(lazyBackground);
+          });
+     }
 });
 function changeBackgroundImage() {
 
