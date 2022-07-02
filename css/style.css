@@ -166,7 +166,7 @@ li {
     height: auto;
 }
 
-.FontEcranAccueil.bg-visible {
+.FontEcranAccueil {
     background-color: #cccccc;
     height: 988px;
     background-position: center;
@@ -889,7 +889,7 @@ li {
 
 
 /* Page ->> A-Propos  Article-Presentation */
-.MainApropos.bg-visible {
+.MainApropos {
     background-image: url("../Font/light-blue-waves.webp");
     width: 100%;
     height: auto;
