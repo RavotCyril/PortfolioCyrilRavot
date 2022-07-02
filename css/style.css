@@ -890,12 +890,7 @@ li {
 
 /* Page ->> A-Propos  Article-Presentation */
 .MainApropos {
-    background-image: url("../Font/light-blue-waves.webp");
-    width: 100%;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background: darkgray;
     padding: 0px 0px 50px 0px;
 }
 
