@@ -166,7 +166,7 @@ li {
     height: auto;
 }
 
-.FontEcranAccueil {
+.FontEcranAccueil.bg-visible {
     background-color: #cccccc;
     height: 988px;
     background-position: center;
@@ -261,12 +261,16 @@ li {
 
 /* Titre Principal h1 de toutes les pages */
 
-.TitreH1-Toute-Page {
+.TitreH1-Toute-Page,
+.AccueilTitreH1 {
     font-family: Helvetica Neue;
     width: 100%;
     font-size: 2.5rem;
     text-align: center;
     color: black;
+}
+
+.TitreH1-Toute-Page {
     background: #6A9ABE;
 }
 
