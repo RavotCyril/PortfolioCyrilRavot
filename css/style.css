@@ -1607,6 +1607,7 @@ footer a {
     }
 
     /*  Page --> Main compétence Class pour les compétences en display flex ( cote à cote ) */
+    #MainCompetence .Projet-Titre,
     .Competences h2 {
         font-size: 1rem;
         text-align: center;
